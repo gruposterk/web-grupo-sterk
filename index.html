@@ -162,6 +162,7 @@ h3{font-size:clamp(1.2rem,2vw,1.5rem);line-height:1.3}
 .project-card:hover .project-card-overlay{background:linear-gradient(0deg,rgba(52,68,77,0.92) 0%,rgba(52,68,77,0.3) 60%,rgba(52,68,77,0.1) 100%)}
 .project-card-title{color:var(--white);font-size:1.1rem;font-weight:400;margin-bottom:4px}
 .project-card-cat{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent)}
+.project-card-desc{font-size:0.75rem;color:rgba(255,255,255,0.7);font-weight:300;margin-top:4px}
 .project-card-cta{
   opacity:0;transform:translateY(8px);
   margin-top:12px;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;
@@ -295,8 +296,7 @@ h3{font-size:clamp(1.2rem,2vw,1.5rem);line-height:1.3}
     <div class="nav-links" id="nav-links">
       <a href="#servicios">Servicios</a>
       <a href="#portafolio">Portafolio</a>
-      <a href="#equipo">Equipo</a>
-      <a href="#proceso">Proceso</a>
+      <a href="#liderazgo">Liderazgo</a>
       <a href="#contacto" class="btn btn-white nav-cta">Contáctenos</a>
     </div>
     <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
@@ -312,8 +312,7 @@ h3{font-size:clamp(1.2rem,2vw,1.5rem);line-height:1.3}
   </button>
   <a href="#servicios" class="mobile-link">Servicios</a>
   <a href="#portafolio" class="mobile-link">Portafolio</a>
-  <a href="#equipo" class="mobile-link">Equipo</a>
-  <a href="#proceso" class="mobile-link">Proceso</a>
+  <a href="#liderazgo" class="mobile-link">Liderazgo</a>
   <a href="#contacto" class="mobile-link">Contáctenos</a>
 </div>
 
@@ -357,22 +356,22 @@ h3{font-size:clamp(1.2rem,2vw,1.5rem);line-height:1.3}
       <div class="service-card reveal reveal-delay-1">
         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
         <h3>Construcción Residencial</h3>
-        <p>Hogares diseñados desde cero con los más altos estándares de calidad, desde residencias unifamiliares hasta desarrollos multifamiliares.</p>
+        <p>Desarrollos multifamiliares, residencias y proyectos llave en mano con los más altos estándares de calidad y acabados.</p>
       </div>
       <div class="service-card reveal reveal-delay-2">
         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16M3 21h18M9 7h1M9 11h1M9 15h1M14 7h1M14 11h1M14 15h1"/></svg>
         <h3>Construcción Comercial</h3>
-        <p>Locales comerciales, oficinas y espacios de negocio que combinan funcionalidad con estética de primer nivel.</p>
+        <p>Locales, oficinas y espacios comerciales diseñados para impulsar su negocio con funcionalidad y estética de primer nivel.</p>
       </div>
       <div class="service-card reveal reveal-delay-3">
         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
         <h3>Remodelación y Renovación</h3>
-        <p>Transformamos espacios existentes en ambientes modernos y funcionales. Remodelaciones completas de apartamentos, casas y locales.</p>
+        <p>Transformamos apartamentos, casas y locales en espacios renovados que combinan diseño moderno con funcionalidad a su medida.</p>
       </div>
       <div class="service-card reveal reveal-delay-4">
         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
         <h3>Mantenimiento Industrial</h3>
-        <p>Servicios especializados de mantenimiento preventivo y correctivo para edificaciones comerciales e industriales.</p>
+        <p>Mantenimiento preventivo y correctivo para edificaciones comerciales e industriales que protege su inversión a largo plazo.</p>
       </div>
     </div>
   </div>
@@ -382,14 +381,15 @@ h3{font-size:clamp(1.2rem,2vw,1.5rem);line-height:1.3}
 <section class="section" id="portafolio" style="background:var(--off-white)">
   <div class="container">
     <p class="label reveal">Nuestro trabajo</p>
-    <h2 class="reveal reveal-delay-1" style="margin-top:8px;margin-bottom:8px">Portafolio de proyectos</h2>
-    <p class="reveal reveal-delay-2" style="color:var(--secondary);font-weight:300;max-width:520px;margin-bottom:32px">Cada proyecto es una historia de dedicación, creatividad y excelencia. Explora nuestro trabajo y descubre lo que podemos crear juntos.</p>
+    <h2 class="reveal reveal-delay-1" style="margin-top:8px;margin-bottom:8px">Una muestra de lo que hacemos</h2>
+    <p class="reveal reveal-delay-2" style="color:var(--secondary);font-weight:300;max-width:520px;margin-bottom:32px">Más de 50 proyectos respaldan nuestra trayectoria. Aquí, algunos de los que más nos enorgullecen.</p>
 
     <div class="portfolio-tabs reveal reveal-delay-2" id="portfolio-tabs">
       <button class="portfolio-tab active" data-filter="all">Todos</button>
-      <button class="portfolio-tab" data-filter="nuevas">Nuevas Construcciones</button>
-      <button class="portfolio-tab" data-filter="residencial">Renovación Residencial</button>
-      <button class="portfolio-tab" data-filter="comercial">Espacios Comerciales</button>
+      <button class="portfolio-tab" data-filter="construccion-residencial">Construcción Residencial</button>
+      <button class="portfolio-tab" data-filter="construccion-comercial">Construcción Comercial</button>
+      <button class="portfolio-tab" data-filter="remodelacion">Remodelación y Renovación</button>
+      <button class="portfolio-tab" data-filter="mantenimiento">Mantenimiento Industrial</button>
     </div>
 
     <div class="portfolio-grid" id="portfolio-grid">
@@ -398,8 +398,8 @@ h3{font-size:clamp(1.2rem,2vw,1.5rem);line-height:1.3}
   </div>
 </section>
 
-<!-- ===== EQUIPO ===== -->
-<section class="section" id="equipo">
+<!-- ===== LIDERAZGO ===== -->
+<section class="section" id="liderazgo">
   <div class="container">
     <div class="about-layout">
       <div class="about-avatar reveal">
@@ -409,66 +409,27 @@ h3{font-size:clamp(1.2rem,2vw,1.5rem);line-height:1.3}
         <p class="label reveal">Liderazgo</p>
         <h2 class="reveal reveal-delay-1" style="margin-top:8px">Ing. Omar Di Luca</h2>
         <p class="about-role reveal reveal-delay-2">Director &amp; Ingeniero Civil</p>
-        <p class="reveal reveal-delay-2">Ingeniero civil con idoneidad panameña y más de 15 años de experiencia en la industria de la construcción. Omar combina una pasión por la excelencia con un enfoque práctico y creativo para resolver los desafíos más complejos de cada proyecto.</p>
-        <p class="reveal reveal-delay-3">Su filosofía se centra en superar las expectativas del cliente a través de la mejora continua, la comunicación transparente y un compromiso inquebrantable con la calidad. Con una habilidad natural para conectar con las personas y encontrar soluciones innovadoras, Omar lidera cada obra con la misma energía y dedicación que si fuera propia.</p>
-        <div class="about-details reveal reveal-delay-4">
-          <div>
-            <div class="about-detail-num">15+</div>
-            <div class="about-detail-label">Años de experiencia</div>
-          </div>
-          <div>
-            <div class="about-detail-num">50+</div>
-            <div class="about-detail-label">Proyectos entregados</div>
-          </div>
-        </div>
+        <p class="reveal reveal-delay-2"><strong>Ingeniero idóneo con más de 15 años de experiencia</strong> en la industria de la construcción. Omar combina una <strong>pasión por la excelencia</strong> con un enfoque práctico y creativo para resolver los desafíos más complejos de cada proyecto.</p>
+        <p class="reveal reveal-delay-3">Su filosofía se centra en <strong>superar las expectativas del cliente</strong> a través de la mejora continua, la comunicación transparente y un <strong>compromiso inquebrantable con la calidad</strong>. Con una habilidad natural para conectar con las personas y encontrar soluciones innovadoras, Omar lidera cada obra con la misma energía y dedicación que si fuera propia.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== PROCESO ===== -->
-<section class="section" id="proceso" style="background:var(--off-white)">
-  <div class="container" style="text-align:center">
-    <p class="label reveal">Cómo trabajamos</p>
-    <h2 class="reveal reveal-delay-1" style="margin-top:8px">Nuestro proceso</h2>
-    <div class="process-grid">
-      <div class="process-step reveal reveal-delay-1">
-        <div class="process-num">01</div>
-        <h3>Consulta</h3>
-        <p>Escuchamos su visión, evaluamos el espacio y definimos juntos los objetivos del proyecto.</p>
-      </div>
-      <div class="process-step reveal reveal-delay-2">
-        <div class="process-num">02</div>
-        <h3>Diseño</h3>
-        <p>Desarrollamos un plan detallado con presupuesto transparente, materiales y cronograma de obra.</p>
-      </div>
-      <div class="process-step reveal reveal-delay-3">
-        <div class="process-num">03</div>
-        <h3>Construcción</h3>
-        <p>Ejecutamos con precisión, supervisión constante y reportes de avance para su tranquilidad.</p>
-      </div>
-      <div class="process-step reveal reveal-delay-4">
-        <div class="process-num">04</div>
-        <h3>Entrega</h3>
-        <p>Revisión final junto a usted para garantizar que cada detalle cumpla con sus expectativas.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <!-- ===== CTA ===== -->
 <section class="section cta-section" id="contacto">
   <div class="container">
-    <p class="label reveal">Comencemos</p>
-    <h2 class="reveal reveal-delay-1" style="margin-top:8px">¿Listo para su próximo proyecto?</h2>
-    <p class="reveal reveal-delay-2">Conversemos sobre su visión. Ofrecemos consultas iniciales sin compromiso para evaluar su proyecto y presentarle una propuesta personalizada.</p>
+    <p class="label reveal">Hablemos</p>
+    <h2 class="reveal reveal-delay-1" style="margin-top:8px">Su próximo proyecto comienza con una conversación</h2>
+    <p class="reveal reveal-delay-2">Cuéntenos su idea y le presentamos una propuesta a la medida, sin compromiso. Estamos listos para construir juntos.</p>
     <div class="cta-btns reveal reveal-delay-3">
       <a href="https://wa.me/50762499781?text=Hola%2C%20me%20interesa%20conocer%20más%20sobre%20los%20servicios%20de%20Grupo%20Sterk" target="_blank" rel="noopener" class="btn btn-primary">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         WhatsApp
       </a>
-      <a href="mailto:omar@sterkpanama.com" class="btn btn-outline">
+      <a href="mailto:quiero@sterkpanama.com" class="btn btn-outline">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
         Email
       </a>
@@ -486,15 +447,14 @@ h3{font-size:clamp(1.2rem,2vw,1.5rem);line-height:1.3}
     <div class="footer-grid">
       <div>
         <img src="web-assets/Logo_Blanco.svg" alt="Grupo Sterk" class="footer-logo">
-        <p class="footer-desc">Construcción y remodelación de excelencia en Panamá. Más de 8 años creando espacios que inspiran confianza.</p>
+        <p class="footer-desc">Construcción y remodelación de excelencia en Panamá. Más de 8 años creando espacios que inspiran.</p>
       </div>
       <div>
         <h4>Navegación</h4>
         <div class="footer-links">
           <a href="#servicios">Servicios</a>
           <a href="#portafolio">Portafolio</a>
-          <a href="#equipo">Equipo</a>
-          <a href="#proceso">Proceso</a>
+          <a href="#liderazgo">Liderazgo</a>
         </div>
       </div>
       <div>
@@ -510,7 +470,7 @@ h3{font-size:clamp(1.2rem,2vw,1.5rem);line-height:1.3}
         <h4>Contacto</h4>
         <div class="footer-links">
           <a href="tel:+50762499781">+507 6249-9781</a>
-          <a href="mailto:omar@sterkpanama.com">omar@sterkpanama.com</a>
+          <a href="mailto:quiero@sterkpanama.com">quiero@sterkpanama.com</a>
           <a href="https://www.instagram.com/gruposterk" target="_blank" rel="noopener">@gruposterk</a>
           <a href="#">Panamá, Panamá</a>
         </div>
@@ -559,97 +519,97 @@ const projects = [
   {
     id: 'balmoral-gardens',
     name: 'Balmoral Gardens',
-    category: 'nuevas',
+    category: 'construccion-residencial',
     catLabel: 'Construcción Residencial',
-    description: 'Construcción residencial desde cero',
-    gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg','gallery-7.jpg','gallery-8.jpg','gallery-9.jpg','gallery-10.jpg','gallery-11.jpg','gallery-12.jpg','gallery-13.jpg']
+    description: 'Proyecto llave en mano · 34 apartamentos, área social con piscina',
+    gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg','gallery-7.jpg','gallery-8.jpg','gallery-9.jpg','gallery-10.jpg','gallery-11.jpg','gallery-12.jpg','gallery-13.jpg','gallery-14.jpg','gallery-15.jpg']
   },
   {
     id: 'acacias-loft',
     name: 'Acacias Loft',
-    category: 'nuevas',
+    category: 'construccion-residencial',
     catLabel: 'Construcción Residencial',
-    description: 'Desarrollo residencial desde cero',
+    description: 'Proyecto llave en mano · 20 apartamentos',
+    gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg','gallery-7.jpg','gallery-8.jpg','gallery-9.jpg','gallery-10.jpg','gallery-11.jpg','gallery-12.jpg']
+  },
+  {
+    id: 'balmoral-loft',
+    name: 'Balmoral Loft',
+    category: 'construccion-residencial',
+    catLabel: 'Construcción Residencial',
+    description: 'Proyecto llave en mano · 24 apartamentos, área social con piscina',
     gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg','gallery-7.jpg','gallery-8.jpg','gallery-9.jpg','gallery-10.jpg','gallery-11.jpg','gallery-12.jpg']
   },
   {
     id: 'ph-grand-tower',
     name: 'PH Grand Tower',
-    category: 'nuevas',
+    category: 'construccion-residencial',
     catLabel: 'Construcción Residencial',
-    description: 'Construcción de bohío residencial',
+    description: 'Construcción de bohío y área social',
     gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg']
   },
   {
     id: 'top-carwash',
     name: 'Top Carwash Costa Verde',
-    category: 'comercial',
+    category: 'construccion-comercial',
     catLabel: 'Construcción Comercial',
-    description: 'Local comercial desde cero',
+    description: 'Construcción de local comercial desde cero',
     gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg','gallery-7.jpg','gallery-8.jpg','gallery-9.jpg','gallery-10.jpg']
+  },
+  {
+    id: 'chill-in',
+    name: 'Chill In',
+    category: 'remodelacion',
+    catLabel: 'Remodelación y Renovación',
+    description: 'Remodelación integral de local comercial',
+    gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg']
   },
   {
     id: 'platinum-tower',
     name: 'Platinum Tower',
-    category: 'residencial',
-    catLabel: 'Renovación Residencial',
-    description: 'Remodelación de apartamento',
+    category: 'remodelacion',
+    catLabel: 'Remodelación y Renovación',
+    description: 'Renovación completa de apartamento de lujo',
     gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg']
   },
   {
     id: 'terrazas-del-parque',
     name: 'Terrazas del Parque',
-    category: 'residencial',
-    catLabel: 'Renovación Residencial',
-    description: 'Remodelación de apartamento',
+    category: 'remodelacion',
+    catLabel: 'Remodelación y Renovación',
+    description: 'Renovación integral de apartamento',
     gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg']
-  },
-  {
-    id: 'metropolis',
-    name: 'Metropolis',
-    category: 'residencial',
-    catLabel: 'Renovación Residencial',
-    description: 'Remodelación de apartamento',
-    gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg']
   },
   {
     id: 'casa-williams',
     name: 'Casa Williams',
-    category: 'residencial',
-    catLabel: 'Renovación Residencial',
-    description: 'Remodelación de apartamento',
+    category: 'remodelacion',
+    catLabel: 'Remodelación y Renovación',
+    description: 'Remodelación de residencia privada',
     gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg']
-  },
-  {
-    id: 'chill-in',
-    name: 'Chill In',
-    category: 'comercial',
-    catLabel: 'Espacio Comercial',
-    description: 'Local comercial',
-    gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg']
   },
   {
     id: 'sortis',
     name: 'Oficina Sortis Business Tower',
-    category: 'comercial',
-    catLabel: 'Remodelación Comercial',
-    description: 'Remodelación de oficina',
+    category: 'remodelacion',
+    catLabel: 'Remodelación y Renovación',
+    description: 'Remodelación de oficina corporativa',
     gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg']
   },
   {
     id: 'milla-8',
-    name: 'Milla 8',
-    category: 'comercial',
-    catLabel: 'Remodelación Comercial',
-    description: 'Remodelación comercial',
-    gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg','gallery-7.jpg','gallery-8.jpg','gallery-9.jpg']
+    name: 'MLC — Multimodal Logistics',
+    category: 'remodelacion',
+    catLabel: 'Remodelación y Renovación',
+    description: 'Remodelación de espacio comercial e industrial',
+    gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg','gallery-7.jpg','gallery-8.jpg','gallery-9.jpg','gallery-10.jpg']
   },
   {
     id: 'banco-lafise',
     name: 'Banco Lafise',
-    category: 'comercial',
+    category: 'mantenimiento',
     catLabel: 'Mantenimiento Industrial',
-    description: 'Mantenimiento industrial',
+    description: 'Mantenimiento preventivo y correctivo',
     gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg']
   }
 ];
@@ -665,11 +625,13 @@ function renderPortfolio(filter) {
     const card = document.createElement('div');
     card.className = 'project-card reveal' + (i < 4 ? ' reveal-delay-' + (i + 1) : '');
     card.setAttribute('data-project', p.id);
+    const descHtml = p.description ? `<div class="project-card-desc">${p.description}</div>` : '';
     card.innerHTML = `
       <img src="web-assets/projects/${p.id}/cover.jpg" alt="${p.name}" loading="lazy" width="680" height="510">
       <div class="project-card-overlay">
         <div class="project-card-cat">${p.catLabel}</div>
         <div class="project-card-title">${p.name}</div>
+        ${descHtml}
         <div class="project-card-cta">Ver proyecto <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
       </div>
     `;
