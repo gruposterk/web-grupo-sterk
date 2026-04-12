@@ -9,15 +9,15 @@
   <meta name="description" content="Construcción residencial, comercial y remodelación en Panamá. 8+ años, 50+ proyectos. Cotización sin compromiso.">
   <link rel="canonical" href="https://www.sterkpanama.com/">
 
-  <!-- Open Graph Tags -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Grupo Sterk | Constructora y Remodelación en Panamá">
-  <meta property="og:description" content="Construcción residencial, comercial y remodelación en Panamá. 8+ años, 50+ proyectos. Cotización sin compromiso.">
+  <meta property="og:description" content="Construcción residencial, comercial y remodelación en Panamá. 8+ años, 50+ proyectos.">
   <meta property="og:image" content="https://www.sterkpanama.com/web-assets/projects/balmoral-loft/gallery-7.jpg">
   <meta property="og:url" content="https://www.sterkpanama.com/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_PA">
 
-  <!-- JSON-LD Schema Markup -->
+  <!-- JSON-LD: LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,21 +39,15 @@
       "jobTitle": "Director & Ingeniero Civil"
     },
     "foundingDate": "2018",
-    "numberOfEmployees": {
-      "@type": "QuantitativeValue",
-      "minValue": 10,
-      "maxValue": 50
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Panamá"
-    },
+    "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 10, "maxValue": 50 },
+    "areaServed": { "@type": "City", "name": "Panamá" },
     "priceRange": "$$",
     "image": "https://www.sterkpanama.com/web-assets/Logo_Color.svg",
     "sameAs": ["https://www.instagram.com/gruposterk"]
   }
   </script>
 
+  <!-- JSON-LD: Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -77,7 +71,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="/css/styles.css">
@@ -86,91 +80,107 @@
   <link rel="icon" type="image/svg+xml" href="/web-assets/Logo_Color.svg">
 </head>
 <body>
-  <!-- Navigation -->
+
+  <!-- ===== NAV ===== -->
   <nav class="nav" id="navbar">
-    <div class="container nav-inner">
+    <div class="container nav__inner">
       <a href="/">
-        <img src="/web-assets/Logo_Blanco.svg" alt="Grupo Sterk Constructora" class="nav-logo" id="nav-logo">
+        <img src="/web-assets/Logo_Blanco.svg" alt="Grupo Sterk Constructora" class="nav__logo" id="nav-logo">
       </a>
-      <div class="nav-links" id="nav-links">
+      <div class="nav__links" id="nav-links">
         <a href="/construccion-residencial">Servicios</a>
         <a href="/proyectos">Portafolio</a>
-        <a href="/contacto" class="btn btn-white nav-cta">Contáctenos</a>
+        <a href="/contacto" class="btn btn--white nav__cta">Contáctenos</a>
       </div>
-      <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
+      <button class="nav__toggle" id="mobile-toggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
       </button>
     </div>
-
-    <!-- Mobile Menu -->
-    <div class="nav-mobile" id="nav-mobile">
-      <a href="/">Inicio</a>
-      <a href="/construccion-residencial">Construcción Residencial</a>
-      <a href="/construccion-comercial">Construcción Comercial</a>
-      <a href="/remodelacion">Remodelación</a>
-      <a href="/mantenimiento-industrial">Mantenimiento Industrial</a>
-      <a href="/proyectos">Portafolio</a>
-      <a href="/contacto">Contáctenos</a>
-    </div>
   </nav>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero" style="background-image: url('/web-assets/projects/balmoral-loft/gallery-7.jpg')">
-      <div class="container hero-content">
-        <span class="hero-label">Construcción & Remodelación en Panamá</span>
-        <h1 class="hero-title">Construimos espacios que <span class="accent-text">inspiran</span></h1>
-        <p class="hero-subtitle">Más de 8 años transformando ideas en realidad. Diseño, calidad y compromiso en cada proyecto residencial y comercial.</p>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu__close" id="mobile-close" aria-label="Cerrar menú">
+      <span></span><span></span>
+    </button>
+    <a href="/">Inicio</a>
+    <a href="/construccion-residencial">Construcción Residencial</a>
+    <a href="/construccion-comercial">Construcción Comercial</a>
+    <a href="/remodelacion">Remodelación</a>
+    <a href="/mantenimiento-industrial">Mantenimiento Industrial</a>
+    <a href="/proyectos">Portafolio</a>
+    <a href="/contacto">Contáctenos</a>
+  </div>
 
-        <div class="hero-buttons">
-          <a href="/proyectos" class="btn btn-primary">Ver Proyectos</a>
-          <a href="https://wa.me/50762499781?text=Hola%2C%20me%20gustaría%20solicitar%20una%20cotización" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Solicitar Cotización</a>
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero__bg">
+        <img src="/web-assets/projects/balmoral-loft/gallery-7.jpg" alt="Proyecto de construcción Grupo Sterk" width="1600" height="1200">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <span class="label label--accent sr">Construcción & Remodelación en Panamá</span>
+        <h1 class="sr sr-d1">Construimos espacios que <span class="accent">inspiran</span></h1>
+        <p class="hero__sub sr sr-d2">Más de 8 años transformando ideas en realidad. Diseño, calidad y compromiso en cada proyecto residencial y comercial.</p>
+
+        <div class="hero__btns sr sr-d3">
+          <a href="/proyectos" class="btn btn--primary">Ver Proyectos</a>
+          <a href="https://wa.me/50762499781?text=Hola%2C%20me%20gustaría%20solicitar%20una%20cotización" class="btn btn--white" target="_blank" rel="noopener noreferrer">Solicitar Cotización</a>
         </div>
 
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-number">8+</span>
-            <span class="stat-label">Años</span>
+        <div class="hero__stats sr sr-d4">
+          <div>
+            <span class="hero__stat-num">8+</span>
+            <span class="hero__stat-label">Años</span>
           </div>
-          <div class="stat">
-            <span class="stat-number">50+</span>
-            <span class="stat-label">Proyectos</span>
+          <div>
+            <span class="hero__stat-num">50+</span>
+            <span class="hero__stat-label">Proyectos</span>
           </div>
-          <div class="stat">
-            <span class="stat-number">100%</span>
-            <span class="stat-label">Satisfechos</span>
+          <div>
+            <span class="hero__stat-num">100%</span>
+            <span class="hero__stat-label">Satisfechos</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services-section">
+    <!-- ===== SERVICES ===== -->
+    <section class="section">
       <div class="container">
-        <span class="section-label">Lo que hacemos</span>
-        <h2 class="section-title">Soluciones integrales de construcción</h2>
+        <span class="label sr">Lo que hacemos</span>
+        <h2 class="sr">Soluciones integrales de construcción</h2>
 
         <div class="services-grid">
-          <a href="/construccion-residencial" class="service-card">
-            <div class="service-icon">🏠</div>
+          <a href="/construccion-residencial" class="service-card sr sr-d1">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
             <h3>Construcción Residencial</h3>
             <p>Proyectos de vivienda de alta calidad, desde apartamentos hasta casas unifamiliares con diseño moderno y acabados premium.</p>
           </a>
 
-          <a href="/construccion-comercial" class="service-card">
-            <div class="service-icon">🏢</div>
+          <a href="/construccion-comercial" class="service-card sr sr-d2">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
             <h3>Construcción Comercial</h3>
             <p>Espacios comerciales funcionales y modernos diseñados para maximizar tu negocio con soluciones innovadoras.</p>
           </a>
 
-          <a href="/remodelacion" class="service-card">
-            <div class="service-icon">🔨</div>
+          <a href="/remodelacion" class="service-card sr sr-d3">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            </div>
             <h3>Remodelación y Renovación</h3>
             <p>Transformamos espacios existentes en ambientes nuevos, modernos y funcionales que se adaptan a tus necesidades.</p>
           </a>
 
-          <a href="/mantenimiento-industrial" class="service-card">
-            <div class="service-icon">⚙️</div>
+          <a href="/mantenimiento-industrial" class="service-card sr sr-d4">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+            </div>
             <h3>Mantenimiento Industrial</h3>
             <p>Servicios especializados de mantenimiento y reparación para infraestructuras industriales con máxima seguridad.</p>
           </a>
@@ -178,184 +188,134 @@
       </div>
     </section>
 
-    <!-- Featured Projects Section -->
-    <section class="projects-section">
+    <!-- ===== FEATURED PROJECTS ===== -->
+    <section class="section" style="background:var(--off-white)">
       <div class="container">
-        <span class="section-label">Nuestro trabajo</span>
-        <h2 class="section-title">Proyectos destacados</h2>
+        <span class="label sr">Nuestro trabajo</span>
+        <h2 class="sr">Proyectos destacados</h2>
 
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="/web-assets/projects/balmoral-gardens/cover.jpg" alt="Balmoral Gardens - Proyecto de construcción residencial">
-              <span class="project-category">Construcción Residencial</span>
-            </div>
-            <div class="project-info">
-              <h3>Balmoral Gardens</h3>
+        <div class="portfolio-grid" style="margin-top:40px">
+          <div class="card sr sr-d1">
+            <img src="/web-assets/projects/balmoral-gardens/cover.jpg" alt="Balmoral Gardens — Construcción residencial en Panamá" loading="lazy" width="800" height="600">
+            <div class="card__overlay">
+              <span class="card__cat">Construcción Residencial</span>
+              <span class="card__title">Balmoral Gardens</span>
+              <span class="card__desc">34 apartamentos · Área social con piscina</span>
             </div>
           </div>
 
-          <div class="project-card">
-            <div class="project-image">
-              <img src="/web-assets/projects/top-carwash/cover.jpg" alt="Top Carwash - Proyecto de construcción comercial">
-              <span class="project-category">Construcción Comercial</span>
-            </div>
-            <div class="project-info">
-              <h3>Top Carwash</h3>
+          <div class="card sr sr-d2">
+            <img src="/web-assets/projects/top-carwash/cover.jpg" alt="Top Carwash — Construcción comercial en Panamá" loading="lazy" width="800" height="600">
+            <div class="card__overlay">
+              <span class="card__cat">Construcción Comercial</span>
+              <span class="card__title">Top Carwash Costa Verde</span>
+              <span class="card__desc">Local comercial desde cero</span>
             </div>
           </div>
 
-          <div class="project-card">
-            <div class="project-image">
-              <img src="/web-assets/projects/platinum-tower/cover.jpg" alt="Platinum Tower - Proyecto de remodelación">
-              <span class="project-category">Remodelación</span>
-            </div>
-            <div class="project-info">
-              <h3>Platinum Tower</h3>
+          <div class="card sr sr-d3">
+            <img src="/web-assets/projects/platinum-tower/cover.jpg" alt="Platinum Tower — Remodelación de apartamento en Panamá" loading="lazy" width="800" height="600">
+            <div class="card__overlay">
+              <span class="card__cat">Remodelación</span>
+              <span class="card__title">Platinum Tower</span>
+              <span class="card__desc">Renovación completa de apartamento de lujo</span>
             </div>
           </div>
         </div>
 
-        <div class="projects-cta">
-          <a href="/proyectos" class="btn btn-primary">Ver todos los proyectos</a>
+        <div style="text-align:center;margin-top:40px" class="sr">
+          <a href="/proyectos" class="btn btn--primary">Ver todos los proyectos</a>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="container cta-content">
+    <!-- ===== ABOUT / LEADERSHIP ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="about-layout sr">
+          <div class="about__avatar">
+            <img src="/web-assets/omar-diluca.jpg" alt="Omar Di Luca — Director Grupo Sterk" width="260" height="260">
+          </div>
+          <span class="label label--accent">Liderazgo</span>
+          <h2>Omar Di Luca</h2>
+          <span class="about__role">Director & Ingeniero Civil</span>
+          <p>Ingeniero civil con más de 8 años de experiencia en construcción residencial, comercial y remodelación en Panamá. Fundador de Grupo Sterk Constructora, empresa reconocida por su compromiso con la calidad, el diseño moderno y la entrega a tiempo en cada proyecto.</p>
+          <p>Desde nuestra oficina en Sortis Business Tower, lideramos proyectos que van desde desarrollos multifamiliares hasta remodelaciones de alto nivel, siempre con un enfoque integral y personalizado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta">
+      <div class="container sr">
         <h2>Su próximo proyecto comienza con una conversación</h2>
         <p>Cuéntenos su idea y le presentamos una propuesta a la medida, sin compromiso.</p>
-
-        <div class="cta-buttons">
-          <a href="https://wa.me/50762499781?text=Hola%2C%20me%20gustaría%20hablar%20sobre%20mi%20proyecto" class="btn btn-white" target="_blank" rel="noopener noreferrer">
-            <span>📱</span> WhatsApp
+        <div class="cta__btns">
+          <a href="https://wa.me/50762499781?text=Hola%2C%20me%20gustaría%20hablar%20sobre%20mi%20proyecto" class="btn btn--white" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.313 0-4.445-.777-6.153-2.086l-.43-.335-3.29 1.102 1.102-3.29-.335-.43A9.96 9.96 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+            WhatsApp
           </a>
-          <a href="mailto:quiero@sterkpanama.com" class="btn btn-white">
-            <span>✉️</span> Email
+          <a href="mailto:quiero@sterkpanama.com" class="btn btn--white">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
           </a>
-          <a href="https://www.instagram.com/gruposterk" class="btn btn-white" target="_blank" rel="noopener noreferrer">
-            <span>📸</span> Instagram
+          <a href="https://www.instagram.com/gruposterk" class="btn btn--white" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
           </a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-column footer-about">
-        <img src="/web-assets/Logo_Blanco.svg" alt="Grupo Sterk Constructora" class="footer-logo">
-        <p>Construcción y remodelación de excelencia en Panamá. Más de 8 años creando espacios que inspiran.</p>
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <img src="/web-assets/Logo_Blanco.svg" alt="Grupo Sterk Constructora" class="footer__logo">
+          <p class="footer__desc">Construcción y remodelación de excelencia en Panamá. Más de 8 años creando espacios que inspiran.</p>
+        </div>
+        <div>
+          <h4>Navegación</h4>
+          <div class="footer__links">
+            <a href="/">Inicio</a>
+            <a href="/construccion-residencial">Servicios</a>
+            <a href="/proyectos">Portafolio</a>
+            <a href="/contacto">Contacto</a>
+          </div>
+        </div>
+        <div>
+          <h4>Servicios</h4>
+          <div class="footer__links">
+            <a href="/construccion-residencial">Construcción Residencial</a>
+            <a href="/construccion-comercial">Construcción Comercial</a>
+            <a href="/remodelacion">Remodelación</a>
+            <a href="/mantenimiento-industrial">Mantenimiento Industrial</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <div class="footer__links">
+            <a href="tel:+50762499781">+507-6249-9781</a>
+            <a href="mailto:quiero@sterkpanama.com">quiero@sterkpanama.com</a>
+            <a href="https://www.instagram.com/gruposterk" target="_blank" rel="noopener noreferrer">@gruposterk</a>
+          </div>
+          <p style="font-size:.78rem;color:rgba(255,255,255,.4);margin-top:14px;font-weight:300;line-height:1.5">Sortis Business Tower<br>Piso 22, Oficina 22-02<br>Panamá, PA</p>
+        </div>
       </div>
-
-      <div class="footer-column footer-nav">
-        <h4>Navegación</h4>
-        <nav>
-          <a href="/">Inicio</a>
-          <a href="/construccion-residencial">Servicios</a>
-          <a href="/proyectos">Portafolio</a>
-          <a href="/contacto">Contacto</a>
-        </nav>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Grupo Sterk Constructora. Todos los derechos reservados.</p>
       </div>
-
-      <div class="footer-column footer-services">
-        <h4>Servicios</h4>
-        <nav>
-          <a href="/construccion-residencial">Construcción Residencial</a>
-          <a href="/construccion-comercial">Construcción Comercial</a>
-          <a href="/remodelacion">Remodelación y Renovación</a>
-          <a href="/mantenimiento-industrial">Mantenimiento Industrial</a>
-        </nav>
-      </div>
-
-      <div class="footer-column footer-contact">
-        <h4>Contacto</h4>
-        <p>
-          <strong>Teléfono:</strong><br>
-          <a href="tel:+507-6249-9781">+507-6249-9781</a>
-        </p>
-        <p>
-          <strong>Email:</strong><br>
-          <a href="mailto:quiero@sterkpanama.com">quiero@sterkpanama.com</a>
-        </p>
-        <p>
-          <strong>Redes:</strong><br>
-          <a href="https://www.instagram.com/gruposterk" target="_blank" rel="noopener noreferrer">@gruposterk</a>
-        </p>
-        <p>
-          <strong>Oficina:</strong><br>
-          Sortis Business Tower, Piso 22, Oficina 22-02<br>
-          Panamá, PA
-        </p>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 Grupo Sterk Constructora. Todos los derechos reservados.</p>
     </div>
   </footer>
 
   <!-- WhatsApp FAB -->
-  <a href="https://wa.me/50762499781?text=Hola%2C%20me%20gustaría%20información%20sobre%20sus%20servicios" class="whatsapp-fab" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">
-    <span>💬</span>
+  <a href="https://wa.me/50762499781?text=Hola%2C%20me%20gustaría%20información%20sobre%20sus%20servicios" class="wa-fab" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.313 0-4.445-.777-6.153-2.086l-.43-.335-3.29 1.102 1.102-3.29-.335-.43A9.96 9.96 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
   </a>
 
-  <!-- JavaScript -->
-  <script>
-    // Navbar scroll effect
-    const navbar = document.getElementById('navbar');
-    const navLogo = document.getElementById('nav-logo');
-    const mobileToggle = document.getElementById('mobile-toggle');
-    const navMobile = document.getElementById('nav-mobile');
-    const navLinks = document.getElementById('nav-links');
-
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 60) {
-        navbar.classList.add('scrolled');
-        navLogo.src = '/web-assets/Logo_Color.svg';
-      } else {
-        navbar.classList.remove('scrolled');
-        navLogo.src = '/web-assets/Logo_Blanco.svg';
-      }
-    });
-
-    // Mobile menu toggle
-    mobileToggle.addEventListener('click', () => {
-      navMobile.classList.toggle('active');
-      mobileToggle.classList.toggle('active');
-    });
-
-    // Close mobile menu when a link is clicked
-    const mobileLinks = navMobile.querySelectorAll('a');
-    mobileLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        navMobile.classList.remove('active');
-        mobileToggle.classList.remove('active');
-      });
-    });
-
-    // Scroll reveal with IntersectionObserver
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    // Observe elements for scroll reveal
-    document.querySelectorAll('.service-card, .project-card, .section-title').forEach(el => {
-      observer.observe(el);
-    });
-  </script>
+  <!-- JS -->
+  <script src="/js/shared.js"></script>
 </body>
 </html>
