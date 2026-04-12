@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos de Construcción en Panamá | Grupo Sterk</title>
+  <meta name="description" content="Más de 50 proyectos de construcción residencial, comercial y remodelación en Panamá. Explore nuestro portafolio.">
+  <link rel="canonical" href="https://www.sterkpanama.com/proyectos">
+
+  <!-- OG Tags -->
+  <meta property="og:title" content="Proyectos de Construcción en Panamá | Grupo Sterk">
+  <meta property="og:description" content="Más de 50 proyectos de construcción residencial, comercial y remodelación en Panamá. Explore nuestro portafolio.">
+  <meta property="og:url" content="https://www.sterkpanama.com/proyectos">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_PA">
+  <meta property="og:site_name" content="Grupo Sterk Constructora">
+  <meta property="og:image" content="https://www.sterkpanama.com/web-assets/projects/balmoral-gardens/cover.jpg">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://www.sterkpanama.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Proyectos",
+        "item": "https://www.sterkpanama.com/proyectos"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav nav-solid" id="navbar">
+    <div class="container nav-inner">
+      <a href="/"><img src="/web-assets/Logo_Color.svg" alt="Grupo Sterk Constructora" class="nav-logo" id="nav-logo"></a>
+      <div class="nav-links" id="nav-links">
+        <a href="/construccion-residencial">Servicios</a>
+        <a href="/proyectos" class="active">Portafolio</a>
+        <a href="/contacto" class="btn btn-outline nav-cta">Contáctenos</a>
+      </div>
+      <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/">Inicio</a>
+    <a href="/construccion-residencial">Construcción Residencial</a>
+    <a href="/construccion-comercial">Construcción Comercial</a>
+    <a href="/remodelacion">Remodelación</a>
+    <a href="/mantenimiento-industrial">Mantenimiento Industrial</a>
+    <a href="/proyectos">Portafolio</a>
+    <a href="/contacto">Contacto</a>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="/">Inicio</a></li>
+        <li class="breadcrumb-sep">›</li>
+        <li class="breadcrumb-current">Proyectos</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Portfolio Intro Section -->
+  <section class="portfolio-intro">
+    <div class="container">
+      <div class="section-label">Nuestro trabajo</div>
+      <h1>Portafolio de Proyectos</h1>
+      <p>Cada proyecto es una historia de precisión, dedicación y compromiso con la excelencia. Desde desarrollos residenciales multifamiliares hasta remodelaciones integrales de apartamentos y locales comerciales, nuestro portafolio refleja más de 8 años de experiencia construyendo en Panamá. Explore nuestros proyectos y descubra la calidad que nos distingue.</p>
+    </div>
+  </section>
+
+  <!-- Filter Tabs -->
+  <section class="portfolio-filters">
+    <div class="container">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="todos">Todos</button>
+        <button class="filter-tab" data-filter="construccion-residencial">Construcción Residencial</button>
+        <button class="filter-tab" data-filter="construccion-comercial">Construcción Comercial</button>
+        <button class="filter-tab" data-filter="remodelacion">Remodelación y Renovación</button>
+        <button class="filter-tab" data-filter="mantenimiento">Mantenimiento Industrial</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="portfolio-grid-section">
+    <div class="container">
+      <div class="portfolio-grid" id="portfolio-grid">
+        <!-- Projects will be rendered here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar galería">&times;</button>
+
+      <div class="lightbox-main">
+        <img id="lightbox-image" src="" alt="">
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Imagen anterior">‹</button>
+        <button class="lightbox-next" id="lightbox-next" aria-label="Siguiente imagen">›</button>
+      </div>
+
+      <div class="lightbox-counter">
+        <span id="lightbox-current">1</span> / <span id="lightbox-total">1</span>
+      </div>
+
+      <div class="lightbox-thumbnails" id="lightbox-thumbnails">
+        <!-- Thumbnails will be populated by JavaScript -->
+      </div>
+
+      <div class="lightbox-info">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-description"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <section class="portfolio-cta">
+    <div class="container">
+      <h2>¿Tiene un proyecto en mente?</h2>
+      <p>Cuéntenos su idea y le presentamos una propuesta a la medida.</p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/507624999781" class="btn btn-primary" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+          WhatsApp
+        </a>
+        <a href="mailto:quiero@sterkpanama.com" class="btn btn-outline">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <path d="m22 7-10 5L2 7"></path>
+          </svg>
+          Enviar Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1: Logo & Description -->
+        <div class="footer-column">
+          <img src="/web-assets/Logo_Blanco.svg" alt="Grupo Sterk Constructora" class="footer-logo">
+          <p>Construyendo con excelencia y compromiso desde 2016. Más de 50 proyectos completados en Panamá.</p>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="footer-column">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/construccion-residencial">Servicios</a></li>
+            <li><a href="/proyectos">Portafolio</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Servicios -->
+        <div class="footer-column">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="/construccion-residencial">Construcción Residencial</a></li>
+            <li><a href="/construccion-comercial">Construcción Comercial</a></li>
+            <li><a href="/remodelacion">Remodelación</a></li>
+            <li><a href="/mantenimiento-industrial">Mantenimiento Industrial</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contacto -->
+        <div class="footer-column">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="tel:+507624999781">+507 6249-9781</a></li>
+            <li><a href="mailto:quiero@sterkpanama.com">quiero@sterkpanama.com</a></li>
+            <li><a href="https://instagram.com/gruposterk" target="_blank" rel="noopener">@gruposterk</a></li>
+            <li>Sortis Business Tower<br>Piso 22 Oficina 22-02</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Grupo Sterk Constructora. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/507624999781" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-1.557.821-2.816 2.088-3.645 3.711-1.477 2.773-.363 6.022 2.488 7.46 1.559.749 3.066.649 4.101-.1.564-.409 1.077-.923 1.51-1.53.205-.299.37-.611.499-.935.313-.799-.098-1.743-.447-2.335-.264-.41-.695-1.003-1.148-1.335-.228-.167-.456-.315-.685-.424a2.505 2.505 0 00-.314-.03z"/>
+    </svg>
+  </a>
+
+  <script>
+    // Project Data
+    const projects = [
+      {
+        id: 'balmoral-gardens',
+        name: 'Balmoral Gardens',
+        category: 'construccion-residencial',
+        catLabel: 'Construcción Residencial',
+        description: 'Proyecto llave en mano · 34 apartamentos, área social con piscina',
+        gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg','gallery-7.jpg','gallery-8.jpg','gallery-9.jpg','gallery-10.jpg','gallery-11.jpg','gallery-12.jpg','gallery-13.jpg','gallery-14.jpg','gallery-15.jpg']
+      },
+      {
+        id: 'acacias-loft',
+        name: 'Acacias Loft',
+        category: 'construccion-residencial',
+        catLabel: 'Construcción Residencial',
+        description: 'Proyecto llave en mano · 20 apartamentos',
+        gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg','gallery-7.jpg','gallery-8.jpg','gallery-9.jpg','gallery-10.jpg','gallery-11.jpg','gallery-12.jpg']
+      },
+      {
+        id: 'balmoral-loft',
+        name: 'Balmoral Loft',
+        category: 'construccion-residencial',
+        catLabel: 'Construcción Residencial',
+        description: 'Proyecto llave en mano · 24 apartamentos, área social con piscina',
+        gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg','gallery-7.jpg','gallery-8.jpg','gallery-9.jpg','gallery-10.jpg','gallery-11.jpg','gallery-12.jpg']
+      },
+      {
+        id: 'ph-grand-tower',
+        name: 'PH Grand Tower',
+        category: 'construccion-residencial',
+        catLabel: 'Construcción Residencial',
+        description: 'Construcción de bohío y área social',
+        gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg']
+      },
+      {
+        id: 'top-carwash',
+        name: 'Top Carwash Costa Verde',
+        category: 'construccion-comercial',
+        catLabel: 'Construcción Comercial',
+        description: 'Construcción de local comercial desde cero',
+        gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg','gallery-7.jpg','gallery-8.jpg','gallery-9.jpg','gallery-10.jpg']
+      },
+      {
+        id: 'chill-in',
+        name: 'Chill In',
+        category: 'remodelacion',
+        catLabel: 'Remodelación y Renovación',
+        description: 'Remodelación integral de local comercial',
+        gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg']
+      },
+      {
+        id: 'platinum-tower',
+        name: 'Platinum Tower',
+        category: 'remodelacion',
+        catLabel: 'Remodelación y Renovación',
+        description: 'Renovación completa de apartamento de lujo',
+        gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg']
+      },
+      {
+        id: 'terrazas-del-parque',
+        name: 'Terrazas del Parque',
+        category: 'remodelacion',
+        catLabel: 'Remodelación y Renovación',
+        description: 'Renovación integral de apartamento',
+        gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg']
+      },
+      {
+        id: 'casa-williams',
+        name: 'Casa Williams',
+        category: 'remodelacion',
+        catLabel: 'Remodelación y Renovación',
+        description: 'Remodelación de residencia privada',
+        gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg']
+      },
+      {
+        id: 'sortis',
+        name: 'Oficina Sortis Business Tower',
+        category: 'remodelacion',
+        catLabel: 'Remodelación y Renovación',
+        description: 'Remodelación de oficina corporativa',
+        gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg']
+      },
+      {
+        id: 'milla-8',
+        name: 'MLC — Multimodal Logistics',
+        category: 'remodelacion',
+        catLabel: 'Remodelación y Renovación',
+        description: 'Remodelación de espacio comercial e industrial',
+        gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg','gallery-6.jpg','gallery-7.jpg','gallery-8.jpg','gallery-9.jpg']
+      },
+      {
+        id: 'banco-lafise',
+        name: 'Banco Lafise',
+        category: 'mantenimiento',
+        catLabel: 'Mantenimiento Industrial',
+        description: 'Mantenimiento preventivo y correctivo',
+        gallery: ['cover.jpg','gallery-1.jpg','gallery-2.jpg','gallery-3.jpg','gallery-4.jpg','gallery-5.jpg']
+      }
+    ];
+
+    // State
+    let currentFilter = 'todos';
+    let lightboxOpen = false;
+    let currentProject = null;
+    let currentImageIndex = 0;
+
+    // Initialize
+    function init() {
+      renderPortfolio();
+      setupFilterTabs();
+      setupLightbox();
+      setupMobileMenu();
+    }
+
+    // Render Portfolio Grid
+    function renderPortfolio() {
+      const grid = document.getElementById('portfolio-grid');
+      grid.innerHTML = '';
+
+      const filteredProjects = currentFilter === 'todos'
+        ? projects
+        : projects.filter(p => p.category === currentFilter);
+
+      filteredProjects.forEach((project, index) => {
+        const card = document.createElement('div');
+        card.className = 'portfolio-card';
+        card.style.animationDelay = `${index * 0.1}s`;
+        card.innerHTML = `
+          <div class="portfolio-card-image">
+            <img src="/web-assets/projects/${project.id}/cover.jpg" alt="${project.name} — ${project.description}" loading="lazy">
+            <div class="portfolio-card-overlay">
+              <button class="portfolio-card-btn" data-project-id="${project.id}">Ver Galería</button>
+            </div>
+          </div>
+          <div class="portfolio-card-content">
+            <h3>${project.name}</h3>
+            <p class="portfolio-card-category">${project.catLabel}</p>
+            <p class="portfolio-card-description">${project.description}</p>
+          </div>
+        `;
+        grid.appendChild(card);
+
+        card.querySelector('.portfolio-card-btn').addEventListener('click', () => {
+          openLightbox(project);
+        });
+      });
+    }
+
+    // Filter Tabs
+    function setupFilterTabs() {
+      const tabs = document.querySelectorAll('.filter-tab');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          currentFilter = tab.dataset.filter;
+          renderPortfolio();
+        });
+      });
+    }
+
+    // Lightbox Functions
+    function openLightbox(project) {
+      currentProject = project;
+      currentImageIndex = 0;
+      lightboxOpen = true;
+
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+
+      updateLightboxImage();
+      updateLightboxThumbnails();
+      updateLightboxInfo();
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+      lightboxOpen = false;
+      currentProject = null;
+    }
+
+    function updateLightboxImage() {
+      if (!currentProject) return;
+
+      const imagePath = `/web-assets/projects/${currentProject.id}/${currentProject.gallery[currentImageIndex]}`;
+      document.getElementById('lightbox-image').src = imagePath;
+      document.getElementById('lightbox-image').alt = `${currentProject.name} — Image ${currentImageIndex + 1}`;
+      document.getElementById('lightbox-current').textContent = currentImageIndex + 1;
+      document.getElementById('lightbox-total').textContent = currentProject.gallery.length;
+
+      // Scroll to active thumbnail
+      const activeThumbnail = document.querySelector('.lightbox-thumbnail.active');
+      if (activeThumbnail) {
+        activeThumbnail.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      }
+    }
+
+    function updateLightboxThumbnails() {
+      const container = document.getElementById('lightbox-thumbnails');
+      container.innerHTML = '';
+
+      currentProject.gallery.forEach((image, index) => {
+        const thumb = document.createElement('button');
+        thumb.className = `lightbox-thumbnail ${index === currentImageIndex ? 'active' : ''}`;
+        thumb.innerHTML = `<img src="/web-assets/projects/${currentProject.id}/${image}" alt="Thumbnail ${index + 1}">`;
+        thumb.addEventListener('click', () => {
+          currentImageIndex = index;
+          updateLightboxImage();
+        });
+        container.appendChild(thumb);
+      });
+    }
+
+    function updateLightboxInfo() {
+      document.getElementById('lightbox-title').textContent = currentProject.name;
+      document.getElementById('lightbox-description').textContent = currentProject.description;
+    }
+
+    function nextImage() {
+      if (!currentProject) return;
+      currentImageIndex = (currentImageIndex + 1) % currentProject.gallery.length;
+      updateLightboxImage();
+      updateLightboxThumbnails();
+    }
+
+    function prevImage() {
+      if (!currentProject) return;
+      currentImageIndex = (currentImageIndex - 1 + currentProject.gallery.length) % currentProject.gallery.length;
+      updateLightboxImage();
+      updateLightboxThumbnails();
+    }
+
+    function setupLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      const backdrop = document.getElementById('lightbox-backdrop');
+      const closeBtn = document.getElementById('lightbox-close');
+      const prevBtn = document.getElementById('lightbox-prev');
+      const nextBtn = document.getElementById('lightbox-next');
+
+      closeBtn.addEventListener('click', closeLightbox);
+      backdrop.addEventListener('click', closeLightbox);
+      prevBtn.addEventListener('click', prevImage);
+      nextBtn.addEventListener('click', nextImage);
+
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (!lightboxOpen) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') prevImage();
+        if (e.key === 'ArrowRight') nextImage();
+      });
+    }
+
+    // Mobile Menu
+    function setupMobileMenu() {
+      const toggle = document.getElementById('mobile-toggle');
+      const menu = document.getElementById('mobile-menu');
+      const navbar = document.getElementById('navbar');
+
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        toggle.classList.toggle('active');
+      });
+
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.remove('active');
+          toggle.classList.remove('active');
+        });
+      });
+
+      // Close menu on scroll
+      document.addEventListener('scroll', () => {
+        if (menu.classList.contains('active')) {
+          menu.classList.remove('active');
+          toggle.classList.remove('active');
+        }
+      });
+    }
+
+    // Scroll reveal animation
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.portfolio-card').forEach(card => {
+      observer.observe(card);
+    });
+
+    // Initialize on load
+    init();
+  </script>
+
+  <style>
+    /* Portfolio Page Specific Styles */
+    .portfolio-intro {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+    }
+
+    .section-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #d4a574;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .portfolio-intro h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+    }
+
+    .portfolio-intro p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Filter Tabs */
+    .portfolio-filters {
+      padding: 40px 20px;
+      background: #fff;
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .filter-tab {
+      padding: 10px 20px;
+      border: 2px solid #e0e0e0;
+      background: #fff;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .filter-tab:hover {
+      border-color: #d4a574;
+      color: #d4a574;
+    }
+
+    .filter-tab.active {
+      background: #d4a574;
+      color: #fff;
+      border-color: #d4a574;
+    }
+
+    /* Portfolio Grid */
+    .portfolio-grid-section {
+      padding: 60px 20px;
+      background: #fff;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .portfolio-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      animation: slideUp 0.6s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .portfolio-card-image {
+      position: relative;
+      width: 100%;
+      padding-bottom: 66.67%;
+      overflow: hidden;
+      background: #f0f0f0;
+    }
+
+    .portfolio-card-image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-card:hover .portfolio-card-image img {
+      transform: scale(1.08);
+    }
+
+    .portfolio-card-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .portfolio-card:hover .portfolio-card-overlay {
+      opacity: 1;
+    }
+
+    .portfolio-card-btn {
+      padding: 10px 20px;
+      background: #d4a574;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-card-btn:hover {
+      background: #b8884f;
+      transform: scale(1.05);
+    }
+
+    .portfolio-card-content {
+      padding: 20px;
+    }
+
+    .portfolio-card-content h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #1a1a1a;
+    }
+
+    .portfolio-card-category {
+      font-size: 12px;
+      font-weight: 600;
+      color: #d4a574;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .portfolio-card-description {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+    }
+
+    .lightbox.active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox-backdrop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .lightbox-container {
+      position: relative;
+      z-index: 1001;
+      width: 90%;
+      max-width: 1000px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: slideIn 0.3s ease;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 40px;
+      height: 40px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      z-index: 1002;
+    }
+
+    .lightbox-close:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .lightbox-main {
+      position: relative;
+      width: 100%;
+      flex: 1;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .lightbox-main img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      padding: 20px;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      z-index: 1002;
+    }
+
+    .lightbox-prev:hover,
+    .lightbox-next:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    .lightbox-prev {
+      left: 16px;
+    }
+
+    .lightbox-next {
+      right: 16px;
+    }
+
+    .lightbox-counter {
+      padding: 12px 20px;
+      background: #f5f5f5;
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .lightbox-thumbnails {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 12px 16px;
+      background: #f5f5f5;
+      scroll-behavior: smooth;
+    }
+
+    .lightbox-thumbnail {
+      flex-shrink: 0;
+      width: 60px;
+      height: 60px;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      overflow: hidden;
+      cursor: pointer;
+      background: #fff;
+      transition: all 0.3s ease;
+      padding: 0;
+    }
+
+    .lightbox-thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .lightbox-thumbnail:hover {
+      border-color: #ddd;
+    }
+
+    .lightbox-thumbnail.active {
+      border-color: #d4a574;
+    }
+
+    .lightbox-info {
+      padding: 20px;
+      background: #fff;
+    }
+
+    .lightbox-info h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #1a1a1a;
+    }
+
+    .lightbox-info p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* CTA Section */
+    .portfolio-cta {
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #d4a574 0%, #b8884f 100%);
+      color: #fff;
+      text-align: center;
+    }
+
+    .portfolio-cta h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .portfolio-cta > p {
+      font-size: 18px;
+      margin-bottom: 32px;
+      opacity: 0.95;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .portfolio-cta .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 4px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .portfolio-cta .btn-primary {
+      background: #fff;
+      color: #d4a574;
+    }
+
+    .portfolio-cta .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .portfolio-cta .btn-outline {
+      background: transparent;
+      color: #fff;
+      border-color: #fff;
+    }
+
+    .portfolio-cta .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .portfolio-intro h1 {
+        font-size: 32px;
+      }
+
+      .portfolio-intro p {
+        font-size: 14px;
+      }
+
+      .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px;
+      }
+
+      .filter-tabs {
+        gap: 8px;
+      }
+
+      .filter-tab {
+        padding: 8px 14px;
+        font-size: 12px;
+      }
+
+      .portfolio-cta h2 {
+        font-size: 28px;
+      }
+
+      .portfolio-cta > p {
+        font-size: 16px;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+      }
+
+      .portfolio-cta .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .lightbox-container {
+        width: 95%;
+        max-height: 95vh;
+      }
+
+      .lightbox-prev,
+      .lightbox-next {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+      }
+
+      .lightbox-main img {
+        padding: 16px;
+      }
+
+      .lightbox-thumbnails {
+        max-height: 80px;
+      }
+
+      .lightbox-thumbnail {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .portfolio-intro {
+        padding: 40px 16px;
+      }
+
+      .portfolio-intro h1 {
+        font-size: 24px;
+      }
+
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .portfolio-filters {
+        padding: 24px 16px;
+      }
+
+      .filter-tabs {
+        gap: 6px;
+      }
+
+      .filter-tab {
+        padding: 6px 12px;
+        font-size: 11px;
+      }
+
+      .portfolio-cta {
+        padding: 40px 16px;
+      }
+
+      .portfolio-cta h2 {
+        font-size: 22px;
+      }
+
+      .portfolio-cta > p {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .cta-buttons {
+        gap: 10px;
+      }
+
+      .portfolio-cta .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</body>
+</html>
