@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#34444D">
 
   <!-- SEO Meta Tags -->
   <title>Proyectos de Construcción en Panamá | Grupo Sterk</title>
@@ -16,6 +17,12 @@
   <meta property="og:url" content="https://www.sterkpanama.com/proyectos">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_PA">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Proyectos de Construcción en Panamá | Grupo Sterk">
+  <meta name="twitter:description" content="Portafolio de 50+ proyectos de construcción y remodelación en Panamá. Galería de fotos de edificios, locales y renovaciones.">
+  <meta name="twitter:image" content="https://www.sterkpanama.com/web-assets/projects/balmoral-gardens/cover.jpg">
 
   <!-- JSON-LD: BreadcrumbList -->
   <script type="application/ld+json">
@@ -45,7 +52,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.min.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/web-assets/Logo_Color.svg">
@@ -86,7 +93,21 @@
   <main>
     <!-- ===== PAGE HERO ===== -->
     <section class="page-hero">
-      <div class="page-hero__bg"><img src="/web-assets/projects/balmoral-gardens/cover.jpg" alt="Portafolio de proyectos de construcción residencial y remodelación de lujo en Ciudad de Panamá"></div>
+      <div class="page-hero__bg">
+  <picture>
+    <source type="image/webp"
+      srcset="/web-assets/projects/balmoral-gardens/cover-480.webp 480w,
+              /web-assets/projects/balmoral-gardens/cover-768.webp 768w,
+              /web-assets/projects/balmoral-gardens/cover-1200.webp 1200w,
+              /web-assets/projects/balmoral-gardens/cover.webp 1600w"
+      sizes="100vw">
+    <img src="/web-assets/projects/balmoral-gardens/cover.jpg"
+         alt="Portafolio de proyectos de construcción residencial y remodelación de lujo en Ciudad de Panamá"
+         width="1600" height="1200"
+         fetchpriority="high"
+         decoding="async">
+  </picture>
+</div>
       <div class="page-hero__overlay"></div>
       <div class="container page-hero__content">
         <span class="label label--accent">Nuestro Portafolio</span>
@@ -214,7 +235,7 @@
   </div>
 
   <!-- Shared Scripts -->
-  <script src="/js/shared.js"></script>
+  <script src="/js/shared.min.js"></script>
 
   <!-- Portfolio & Lightbox Script -->
   <script>

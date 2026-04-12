@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#34444D">
   <title>Remodelación de Apartamentos y Casas Panamá | Grupo Sterk</title>
   <meta name="description" content="Remodelación de apartamentos, casas y oficinas en Panamá. Renovaciones de lujo con acabados premium y gestión integral. Pide tu cotización →">
   <link rel="canonical" href="https://www.sterkpanama.com/remodelacion">
@@ -12,12 +13,17 @@
   <meta property="og:url" content="https://www.sterkpanama.com/remodelacion">
   <meta property="og:image" content="https://www.sterkpanama.com/web-assets/projects/platinum-tower/cover.jpg">
   <meta property="og:locale" content="es_PA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Remodelación de Apartamentos y Casas Panamá | Grupo Sterk">
+  <meta name="twitter:description" content="Remodelación de apartamentos, casas y oficinas en Panamá. Renovaciones de lujo con acabados premium y gestión integral.">
+  <meta name="twitter:image" content="https://www.sterkpanama.com/web-assets/projects/platinum-tower/cover.jpg">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Remodelación y Renovación","provider":{"@type":"Organization","name":"Grupo Sterk Constructora","url":"https://www.sterkpanama.com","telephone":"+507-6249-9781","email":"quiero@sterkpanama.com"},"description":"Remodelación integral de apartamentos, casas, oficinas y locales comerciales en Panamá. Grupo Sterk Constructora.","areaServed":"PA"}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.sterkpanama.com"},{"@type":"ListItem","position":2,"name":"Remodelación","item":"https://www.sterkpanama.com/remodelacion"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto toma una remodelación?","acceptedAnswer":{"@type":"Answer","text":"Desde 4 semanas para espacios pequeños hasta 6 meses para renovaciones integrales de gran escala."}},{"@type":"Question","name":"¿Puedo habitar mientras remodelan?","acceptedAnswer":{"@type":"Answer","text":"Depende del alcance. Planificamos fases para minimizar la interrupción cuando es posible."}}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.min.css">
   <link rel="icon" type="image/svg+xml" href="/web-assets/Logo_Color.svg">
 </head>
 <body>
@@ -47,7 +53,21 @@
   <main>
     <!-- HERO -->
     <section class="page-hero">
-      <div class="page-hero__bg"><img src="/web-assets/projects/platinum-tower/cover.jpg" alt="Remodelación de apartamento de lujo con acabados de porcelanato y diseño moderno en Panamá"></div>
+      <div class="page-hero__bg">
+  <picture>
+    <source type="image/webp"
+      srcset="/web-assets/projects/platinum-tower/cover-480.webp 480w,
+              /web-assets/projects/platinum-tower/cover-768.webp 768w,
+              /web-assets/projects/platinum-tower/cover-1200.webp 1200w,
+              /web-assets/projects/platinum-tower/cover.webp 1600w"
+      sizes="100vw">
+    <img src="/web-assets/projects/platinum-tower/cover.jpg"
+         alt="Remodelación de apartamento de lujo con acabados de porcelanato y diseño moderno en Panamá"
+         width="1600" height="1200"
+         fetchpriority="high"
+         decoding="async">
+  </picture>
+</div>
       <div class="page-hero__overlay"></div>
       <div class="container page-hero__content">
         <span class="label label--accent sr">Nuestros Servicios</span>
@@ -88,7 +108,7 @@
 
         <div class="portfolio-grid sr" style="margin-top:8px">
           <div class="card sr sr-d1">
-            <img src="/web-assets/projects/chill-in/cover.jpg" alt="Chill In — Remodelación integral de local comercial con diseño moderno en Panamá" loading="lazy">
+            <img src="/web-assets/projects/chill-in/cover.jpg" alt="Chill In — Remodelación integral de local comercial con diseño moderno en Panamá" loading="lazy" width="800" height="600">
             <div class="card__overlay">
               <span class="card__cat">Remodelación</span>
               <span class="card__title">Chill In</span>
@@ -96,7 +116,7 @@
             </div>
           </div>
           <div class="card sr sr-d2">
-            <img src="/web-assets/projects/platinum-tower/cover.jpg" alt="Platinum Tower — Renovación completa de apartamento de lujo con acabados premium en Panamá" loading="lazy">
+            <img src="/web-assets/projects/platinum-tower/cover.jpg" alt="Platinum Tower — Renovación completa de apartamento de lujo con acabados premium en Panamá" loading="lazy" width="800" height="600">
             <div class="card__overlay">
               <span class="card__cat">Renovación</span>
               <span class="card__title">Platinum Tower</span>
@@ -104,7 +124,7 @@
             </div>
           </div>
           <div class="card sr sr-d3">
-            <img src="/web-assets/projects/terrazas-del-parque/cover.jpg" alt="Terrazas del Parque — Renovación integral de apartamento residencial en Ciudad de Panamá" loading="lazy">
+            <img src="/web-assets/projects/terrazas-del-parque/cover.jpg" alt="Terrazas del Parque — Renovación integral de apartamento residencial en Ciudad de Panamá" loading="lazy" width="800" height="600">
             <div class="card__overlay">
               <span class="card__cat">Renovación</span>
               <span class="card__title">Terrazas del Parque</span>
@@ -112,7 +132,7 @@
             </div>
           </div>
           <div class="card sr sr-d4">
-            <img src="/web-assets/projects/casa-williams/cover.jpg" alt="Casa Williams — Remodelación de residencia privada con diseño personalizado en Panamá" loading="lazy">
+            <img src="/web-assets/projects/casa-williams/cover.jpg" alt="Casa Williams — Remodelación de residencia privada con diseño personalizado en Panamá" loading="lazy" width="800" height="600">
             <div class="card__overlay">
               <span class="card__cat">Remodelación</span>
               <span class="card__title">Casa Williams</span>
@@ -120,7 +140,7 @@
             </div>
           </div>
           <div class="card sr sr-d1">
-            <img src="/web-assets/projects/sortis/cover.jpg" alt="Oficina Sortis Business Tower — Remodelación de oficina corporativa moderna en Panamá" loading="lazy">
+            <img src="/web-assets/projects/sortis/cover.jpg" alt="Oficina Sortis Business Tower — Remodelación de oficina corporativa moderna en Panamá" loading="lazy" width="800" height="600">
             <div class="card__overlay">
               <span class="card__cat">Corporativo</span>
               <span class="card__title">Oficina Sortis Business Tower</span>
@@ -128,7 +148,7 @@
             </div>
           </div>
           <div class="card sr sr-d2">
-            <img src="/web-assets/projects/milla-8/cover.jpg" alt="MLC Multimodal Logistics — Remodelación de espacio comercial e industrial en zona franca, Panamá" loading="lazy">
+            <img src="/web-assets/projects/milla-8/cover.jpg" alt="MLC Multimodal Logistics — Remodelación de espacio comercial e industrial en zona franca, Panamá" loading="lazy" width="800" height="600">
             <div class="card__overlay">
               <span class="card__cat">Industrial</span>
               <span class="card__title">MLC — Multimodal Logistics</span>
@@ -191,6 +211,6 @@
   <a href="https://wa.me/50762499781?text=Hola%2C%20me%20interesa%20remodelación" class="wa-fab" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.313 0-4.445-.777-6.153-2.086l-.43-.335-3.29 1.102 1.102-3.29-.335-.43A9.96 9.96 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
   </a>
-  <script src="/js/shared.js"></script>
+  <script src="/js/shared.min.js"></script>
 </body>
 </html>
