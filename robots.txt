@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /web-assets/
+Disallow: /admin/
+Disallow: /temp/
 
 Sitemap: https://www.sterkpanama.com/sitemap.xml
