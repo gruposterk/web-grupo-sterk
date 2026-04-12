@@ -101,41 +101,28 @@
 </head>
 <body>
   <!-- Navigation -->
-  <!-- Navigation -->
-  <nav class="nav nav--solid">
-    <div class="container">
-      <div class="nav__inner">
-        <a href="/" class="nav__logo">
-          <img id="nav-logo" src="/web-assets/Logo_Color.svg" alt="Grupo Sterk Constructora">
-        </a>
-        <div class="nav__links">
-          <a href="/">Inicio</a>
-          <a href="/proyectos">Proyectos</a>
-          <a href="/servicios">Servicios</a>
-          <a href="/equipo">Equipo</a>
-          <a href="/contacto" class="is-active">Contacto</a>
-          <a href="/presupuesto" class="btn btn--primary">Solicitar Presupuesto</a>
-        </div>
-        <button id="mobile-toggle" class="nav__toggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+  <nav class="nav nav--solid" id="navbar">
+    <div class="container nav__inner">
+      <a href="/"><img src="/web-assets/Logo_Color.svg" alt="Grupo Sterk Constructora" class="nav__logo" id="nav-logo"></a>
+      <div class="nav__links" id="nav-links">
+        <a href="/#servicios">Servicios</a>
+        <a href="/proyectos">Portafolio</a>
+        <a href="/contacto" class="btn btn--primary nav__cta is-active">Contáctenos</a>
       </div>
+      <button class="nav__toggle" id="mobile-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="mobile-menu">
-    <button id="mobile-close" class="mobile-menu__close" aria-label="Close menu">×</button>
-    <div class="mobile-menu__content">
-      <a href="/">Inicio</a>
-      <a href="/proyectos">Proyectos</a>
-      <a href="/servicios">Servicios</a>
-      <a href="/equipo">Equipo</a>
-      <a href="/contacto" class="is-active">Contacto</a>
-      <a href="/presupuesto" class="btn btn--primary">Solicitar Presupuesto</a>
-    </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu__close" id="mobile-close" aria-label="Cerrar menú"><span></span><span></span></button>
+    <a href="/">Inicio</a>
+    <a href="/construccion-residencial">Construcción Residencial</a>
+    <a href="/construccion-comercial">Construcción Comercial</a>
+    <a href="/remodelacion">Remodelación</a>
+    <a href="/mantenimiento-industrial">Mantenimiento Industrial</a>
+    <a href="/proyectos">Portafolio</a>
+    <a href="/contacto">Contáctenos</a>
   </div>
 
   <!-- Page Hero -->
@@ -313,7 +300,7 @@
           <h4>Navegación</h4>
           <div class="footer__links">
             <a href="/">Inicio</a>
-            <a href="/construccion-residencial">Servicios</a>
+            <a href="/#servicios">Servicios</a>
             <a href="/proyectos">Portafolio</a>
             <a href="/contacto">Contacto</a>
           </div>

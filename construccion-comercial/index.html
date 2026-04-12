@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Construcción Comercial Panamá | Grupo Sterk</title>
-  <meta name="description" content="Soluciones integrales de construcción comercial en Panamá. Locales, oficinas y espacios comerciales de alta calidad. Construcción desde cero con arquitectura e ingeniería especializada.">
+  <meta name="description" content="Soluciones integrales de construcción comercial en Panamá. Locales, oficinas y espacios comerciales de alta calidad.">
   <link rel="canonical" href="https://www.sterkpanama.com/construccion-comercial">
   <meta property="og:title" content="Construcción Comercial Panamá | Grupo Sterk">
-  <meta property="og:description" content="Soluciones integrales de construcción comercial en Panamá. Locales, oficinas y espacios comerciales de alta calidad.">
+  <meta property="og:description" content="Soluciones integrales de construcción comercial en Panamá.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.sterkpanama.com/construccion-comercial">
   <meta property="og:image" content="https://www.sterkpanama.com/web-assets/projects/top-carwash/cover.jpg">
@@ -21,21 +21,18 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Construcción Comercial",
-    "description": "Soluciones integrales de construcción comercial en Panamá. Construcción de locales, oficinas y espacios comerciales desde cero.",
+    "description": "Soluciones integrales de construcción comercial en Panamá.",
     "provider": {
       "@type": "Organization",
       "name": "Grupo Sterk Constructora",
       "url": "https://www.sterkpanama.com",
       "logo": "https://www.sterkpanama.com/web-assets/Logo_Color.svg",
-      "sameAs": "https://www.instagram.com/gruposterk",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+507-6249-9781",
-        "contactType": "Customer Service",
-        "email": "quiero@sterkpanama.com"
+        "contactType": "Customer Service"
       }
     },
-    "serviceType": "Construcción Comercial",
     "areaServed": "PA",
     "url": "https://www.sterkpanama.com/construccion-comercial"
   }
@@ -46,18 +43,8 @@
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://www.sterkpanama.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Construcción Comercial",
-        "item": "https://www.sterkpanama.com/construccion-comercial"
-      }
+      {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.sterkpanama.com"},
+      {"@type": "ListItem", "position": 2, "name": "Construcción Comercial", "item": "https://www.sterkpanama.com/construccion-comercial"}
     ]
   }
   </script>
@@ -66,60 +53,41 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="nav nav--solid">
-    <div class="container">
-      <div class="nav__inner">
-        <a href="/" class="nav__logo">
-          <img id="nav-logo" src="/web-assets/Logo_Color.svg" alt="Grupo Sterk">
-        </a>
-        <ul class="nav__links">
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/servicios">Servicios</a></li>
-          <li><a href="/proyectos">Proyectos</a></li>
-          <li><a href="/contacto">Contacto</a></li>
-          <li><a href="https://wa.me/50762499781" class="nav__cta btn btn--primary">WhatsApp</a></li>
-        </ul>
-        <button id="mobile-toggle" class="nav__toggle" aria-label="Toggle menu">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
+  <nav class="nav nav--solid" id="navbar">
+    <div class="container nav__inner">
+      <a href="/"><img src="/web-assets/Logo_Color.svg" alt="Grupo Sterk Constructora" class="nav__logo" id="nav-logo"></a>
+      <div class="nav__links" id="nav-links">
+        <a href="/#servicios">Servicios</a>
+        <a href="/proyectos">Portafolio</a>
+        <a href="/contacto" class="btn btn--primary nav__cta">Contáctenos</a>
       </div>
+      <button class="nav__toggle" id="mobile-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="mobile-menu">
-    <button id="mobile-close" class="mobile-menu__close" aria-label="Close menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-      </svg>
-    </button>
-    <ul>
-      <li><a href="/">Inicio</a></li>
-      <li><a href="/servicios">Servicios</a></li>
-      <li><a href="/construccion-residencial">Construcción Residencial</a></li>
-      <li><a href="/construccion-comercial">Construcción Comercial</a></li>
-      <li><a href="/remodelacion">Remodelación</a></li>
-      <li><a href="/supervisoria">Supervisoría</a></li>
-      <li><a href="/proyectos">Proyectos</a></li>
-      <li><a href="/contacto">Contacto</a></li>
-      <li><a href="https://wa.me/50762499781" class="btn btn--primary" style="margin-top: 12px; width: 100%; justify-content: center;">WhatsApp</a></li>
-    </ul>
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu__close" id="mobile-close" aria-label="Cerrar menú"><span></span><span></span></button>
+    <a href="/">Inicio</a>
+    <a href="/construccion-residencial">Construcción Residencial</a>
+    <a href="/construccion-comercial">Construcción Comercial</a>
+    <a href="/remodelacion">Remodelación</a>
+    <a href="/mantenimiento-industrial">Mantenimiento Industrial</a>
+    <a href="/proyectos">Portafolio</a>
+    <a href="/contacto">Contáctenos</a>
   </div>
 
   <!-- Page Hero -->
   <section class="page-hero">
-    <div class="page-hero__bg" style="background-image: url('/web-assets/projects/top-carwash/cover.jpg')"></div>
+    <div class="page-hero__bg">
+      <img src="/web-assets/projects/top-carwash/cover.jpg" alt="Construcción comercial">
+    </div>
     <div class="page-hero__overlay"></div>
     <div class="container">
       <div class="page-hero__content">
         <span class="label label--accent sr sr-d1">Nuestros Servicios</span>
         <h1 class="sr sr-d2">Construcción Comercial</h1>
-        <p class="page-hero__sub sr sr-d3">Locales, oficinas y espacios comerciales de primera calidad en Panamá</p>
+        <p class="page-hero__sub sr sr-d3">Locales, oficinas y espacios comerciales de primera calidad</p>
         <a href="https://wa.me/50762499781" class="btn btn--white sr sr-d4">Contactar ahora</a>
       </div>
     </div>
@@ -143,43 +111,28 @@
         <!-- Service Content -->
         <div class="service-content sr sr-d1">
           <h2 class="sr-d2">Construcción Comercial en Panamá</h2>
-
           <p class="text-light sr sr-d2">
-            En Grupo Sterk Constructora, entendemos que un proyecto de construcción comercial requiere precisión, experiencia y un equipo comprometido con la excelencia. Durante más de una década, hemos desarrollado locales comerciales, oficinas, centros comerciales y espacios especializados que se destacan por su calidad arquitectónica, funcionalidad y durabilidad. Cada proyecto es una oportunidad para demostrar nuestro compromiso con la innovación y la satisfacción del cliente.
+            Transformamos espacios comerciales con precisión, experiencia y compromiso con la excelencia. Locales, oficinas y centros comerciales que combinan funcionalidad, arquitectura moderna y durabilidad.
           </p>
 
-          <h3 class="sr sr-d2">¿Por Qué Elegirnos para tu Proyecto Comercial?</h3>
+          <h3 class="sr sr-d2">¿Por Qué Elegirnos?</h3>
           <p class="text-light sr sr-d3">
-            La construcción comercial en Panamá requiere más que técnica: demanda visión estratégica, conocimiento del mercado local y capacidad para adaptarse a normativas cada vez más rigurosas. Nuestro equipo de profesionales altamente calificados cuenta con experiencia en proyectos de diversa envergadura, desde pequeños locales hasta complejos comerciales de múltiples niveles. Utilizamos tecnología de punta, materiales de primera calidad y metodologías constructivas que garantizan resultados excepcionales.
+            Más de 8 años desarrollando proyectos comerciales complejos. Equipo especializado, materiales premium, tecnología BIM y cumplimiento normativo riguroso en cada proyecto.
           </p>
 
-          <h3 class="sr sr-d2">Nuestro Proceso de Construcción</h3>
+          <h3 class="sr sr-d2">Nuestros Servicios</h3>
           <p class="text-light sr sr-d3">
-            Comenzamos cada proyecto con una fase de planificación rigurosa. Trabajamos estrechamente con arquitectos, diseñadores y expertos en ingeniería para entender tus objetivos y transformarlos en realidad. Luego, ejecutamos cada etapa con precisión: desde la preparación del terreno hasta los acabados finales. Durante todo el proceso, mantenemos comunicación transparente, respetamos cronogramas y presupuestos, y nos aseguramos de que cada detalle cumpla con los más altos estándares de calidad.
+            Construcción desde cero, remodelaciones integrales, adaptaciones de espacios, instalaciones especializadas y acabados personalizados. Optimizamos tiempos sin comprometer calidad.
           </p>
 
-          <h3 class="sr sr-d2">Servicios Especializados en Construcción Comercial</h3>
+          <h3 class="sr sr-d2">Materiales y Tecnología</h3>
           <p class="text-light sr sr-d3">
-            Ofrecemos una amplia gama de servicios para proyectos comerciales: construcción desde cero, remodelaciones integrales, adaptaciones de espacios existentes, instalaciones especializadas y acabados personalizados. Trabajamos con sistemas constructivos modernos que optimizan tiempos de ejecución sin comprometer la calidad. Además, contamos con expertise en proyectos que requieren certificaciones especiales, cumplimiento normativo riguroso y soluciones sostenibles.
+            Concreto de alta resistencia, acero estructural certificado, sistemas de impermeabilización premium y acabados que combinan estética con funcionalidad.
           </p>
 
-          <h3 class="sr sr-d2">Materiales y Tecnología de Vanguardia</h3>
+          <h3 class="sr sr-d2">Cumplimiento Normativo</h3>
           <p class="text-light sr sr-d3">
-            En Grupo Sterk Constructora, seleccionamos cuidadosamente cada material. Utilizamos concreto de alta resistencia, acero estructural certificado, sistemas de impermeabilización de clase mundial y acabados que combinan estética con funcionalidad. Nuestro acceso a proveedores premium garantiza que tu proyecto reciba los mejores recursos disponibles. Además, implementamos tecnología BIM (Building Information Modeling) para proyectos complejos, asegurando coordinación perfecta entre disciplinas.
-          </p>
-
-          <h3 class="sr sr-d2">Cumplimiento Normativo y Certificaciones</h3>
-          <p class="text-light sr sr-d3">
-            Operamos dentro de todos los marcos regulatorios de Panamá. Nuestros proyectos cumplen con códigos de construcción, normativas de seguridad, requerimientos ambientales y estándares técnicos vigentes. Gestionamos permisos, inspecciones y certificaciones necesarias, permitiéndote enfocarte en tu negocio mientras nosotros manejamos la complejidad administrativa y constructiva.
-          </p>
-
-          <h3 class="sr sr-d2">Sostenibilidad y Eficiencia</h3>
-          <p class="text-light sr sr-d3">
-            Creemos en una construcción responsable. Nuestros proyectos incorporan soluciones sostenibles: eficiencia energética, sistemas de ventilación inteligente, reducción de residuos y materiales eco-conscientes. Esto no solo beneficia al medio ambiente, sino que también reduce costos operativos a largo plazo, mejorando la rentabilidad de tu inversión comercial.
-          </p>
-
-          <p class="text-light sr sr-d2">
-            Tu visión comercial merece ser construida con excelencia. En Grupo Sterk Constructora, transformamos ideas en espacios comerciales que generan valor, atraen clientes y crecen con tu negocio. Contacta hoy mismo y déjanos ser parte de tu éxito.
+            Gestionamos todos los permisos, inspecciones y certificaciones requeridas. Operamos dentro de códigos de construcción, normativas de seguridad y estándares ambientales vigentes en Panamá.
           </p>
         </div>
 
@@ -187,12 +140,12 @@
         <aside class="sidebar sr sr-d2">
           <!-- Services Card -->
           <div class="sidebar__card">
-            <span class="label label--accent">Otros Servicios</span>
+            <span class="label label--accent">Nuestros Servicios</span>
             <nav style="display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
               <a href="/construccion-residencial" class="btn btn--ghost">Construcción Residencial</a>
-              <a href="/construccion-comercial" class="btn btn--ghost" style="color: var(--accent); font-weight: 500;">Construcción Comercial</a>
+              <a href="/construccion-comercial" class="btn btn--ghost" style="color: var(--accent);">Construcción Comercial</a>
               <a href="/remodelacion" class="btn btn--ghost">Remodelación</a>
-              <a href="/supervisoria" class="btn btn--ghost">Supervisoría</a>
+              <a href="/mantenimiento-industrial" class="btn btn--ghost">Mantenimiento Industrial</a>
             </nav>
           </div>
 
@@ -200,7 +153,7 @@
           <div class="sidebar__card">
             <span class="label label--accent">¿Tienes Preguntas?</span>
             <p class="text-light" style="margin: 16px 0; font-size: 0.9rem;">
-              Contáctanos por WhatsApp y un especialista responderá todas tus dudas sobre tu proyecto comercial.
+              Contáctanos por WhatsApp. Un especialista responderá todas tus dudas.
             </p>
             <a href="https://wa.me/50762499781" class="btn btn--primary" style="width: 100%; justify-content: center;">
               Enviar WhatsApp
@@ -216,16 +169,17 @@
     <div class="container">
       <div style="margin-bottom: 48px; text-align: center;">
         <span class="label label--accent sr sr-d1">Nuestros Proyectos</span>
-        <h2 class="sr sr-d2">Proyecto Destacado: Construcción Comercial</h2>
+        <h2 class="sr sr-d2">Proyecto Destacado</h2>
       </div>
 
       <div class="portfolio-grid">
         <div class="card sr sr-d3">
-          <div class="card__overlay" style="background-image: url('/web-assets/projects/top-carwash/cover.jpg')"></div>
-          <span class="card__cat">Construcción Comercial</span>
-          <h3 class="card__title">Top Carwash Costa Verde</h3>
-          <p class="card__desc">Construcción de local comercial desde cero</p>
-          <a href="/proyectos/top-carwash" class="btn btn--ghost">Ver Proyecto</a>
+          <img src="/web-assets/projects/top-carwash/cover.jpg" alt="Top Carwash" loading="lazy">
+          <div class="card__overlay">
+            <span class="card__cat">Construcción Comercial</span>
+            <span class="card__title">Top Carwash Costa Verde</span>
+            <span class="card__desc">Construcción de local comercial desde cero</span>
+          </div>
         </div>
       </div>
     </div>
@@ -248,55 +202,19 @@
             </svg>
           </button>
           <div class="faq__a" hidden>
-            <p>El tiempo de construcción varía según el tamaño y complejidad del proyecto. Un local comercial pequeño (100-200m²) puede tomar 3-6 meses, mientras que proyectos más complejos pueden extenderse 8-12 meses o más. En Grupo Sterk Constructora, realizamos una planificación detallada para optimizar tiempos sin comprometer calidad. Factores como permisos, diseño personalizado y características especiales influyen en la duración final.</p>
+            <p>Un local pequeño (100-200m²) toma 3-6 meses. Proyectos complejos pueden extenderse 8-12 meses. Realizamos planificación detallada para optimizar tiempos sin comprometer calidad.</p>
           </div>
         </div>
 
         <div class="faq__item">
           <button class="faq__q" aria-expanded="false">
-            <span>¿Cuáles son los costos estimados para construcción comercial en Panamá?</span>
+            <span>¿Cómo puedo iniciar mi proyecto con Grupo Sterk?</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
           <div class="faq__a" hidden>
-            <p>Los costos dependen de múltiples variables: ubicación geográfica, tamaño del proyecto, especificaciones de diseño, calidad de materiales y complejidad constructiva. En Panamá, los costos oscilan entre $600 y $1,500 USD por metro cuadrado, considerando acabados estándar a premium. Te recomendamos solicitar un presupuesto personalizado. En Grupo Sterk, ofrecemos análisis detallado de costos y opciones de financiamiento según tus necesidades.</p>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false">
-            <span>¿Qué permisos y documentos son necesarios para construir un comercio en Panamá?</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          <div class="faq__a" hidden>
-            <p>Los requisitos incluyen: escritura del terreno, planos arquitectónicos, estudios de impacto ambiental (si aplica), permisos municipales, licencia de construcción y aprobación de planes de seguridad. También pueden requerirse permisos especiales según el tipo de comercio. En Grupo Sterk Constructora, manejamos toda la gestión administrativa y de permisos, asegurando cumplimiento normativo completo desde el inicio del proyecto.</p>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false">
-            <span>¿Ofrecen servicios de supervisión y control de calidad durante la construcción?</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          <div class="faq__a" hidden>
-            <p>Sí. Nuestro equipo realiza inspecciones constantes en cada etapa constructiva: desde cimentación hasta acabados finales. Utilizamos protocolos de control de calidad rigurosos, verificamos cumplimiento de especificaciones técnicas y documentamos cada hito del proyecto. Además, ofrecemos servicios especializados de supervisoría para clientes que deseen monitoreo independiente. La garantía y seguimiento post-construcción también están incluidos.</p>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false">
-            <span>¿Cómo puedo iniciar mi proyecto comercial con Grupo Sterk?</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          <div class="faq__a" hidden>
-            <p>El primer paso es una consulta inicial gratuita. Contáctanos por WhatsApp, teléfono o correo para programar una reunión donde discutiremos tu visión, presupuesto y cronograma. Posteriormente, realizaremos estudios de viabilidad, generaremos propuestas detalladas y formalizaremos el contrato. Nuestro equipo estará contigo en cada fase: desde diseño, permisos, construcción hasta entrega final. ¡Iniciemos tu proyecto hoy mismo!</p>
+            <p>Contacta por WhatsApp, teléfono o email para una consulta inicial gratuita. Discutiremos tu visión, presupuesto y cronograma. Nuestro equipo estará contigo desde diseño hasta entrega final.</p>
           </div>
         </div>
       </div>
@@ -308,12 +226,12 @@
     <div class="container">
       <h2 class="sr sr-d1" style="color: white;">Inicia tu Proyecto Comercial Hoy</h2>
       <p class="text-light sr sr-d2" style="color: rgba(255,255,255,.8); max-width: 600px; margin: 24px auto;">
-        Contáctanos para una consulta gratuita. Nuestro equipo está listo para transformar tu visión comercial en realidad.
+        Contáctanos para una consulta gratuita. Nuestro equipo transformará tu visión en realidad.
       </p>
       <div class="cta__btns sr sr-d3" style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-        <a href="https://wa.me/50762499781" class="btn btn--white">Enviar WhatsApp</a>
-        <a href="mailto:quiero@sterkpanama.com" class="btn btn--outline" style="border-color: white; color: white;">Enviar Email</a>
-        <a href="tel:+50762499781" class="btn btn--outline" style="border-color: white; color: white;">Llamar Ahora</a>
+        <a href="https://wa.me/50762499781" class="btn btn--white">WhatsApp</a>
+        <a href="mailto:quiero@sterkpanama.com" class="btn btn--outline" style="border-color: white; color: white;">Email</a>
+        <a href="tel:+50762499781" class="btn btn--outline" style="border-color: white; color: white;">Llamar</a>
       </div>
     </div>
   </section>
@@ -330,7 +248,7 @@
           <h4>Navegación</h4>
           <div class="footer__links">
             <a href="/">Inicio</a>
-            <a href="/construccion-residencial">Servicios</a>
+            <a href="/#servicios">Servicios</a>
             <a href="/proyectos">Portafolio</a>
             <a href="/contacto">Contacto</a>
           </div>
@@ -374,70 +292,42 @@
     // Mobile menu toggle
     const navToggle = document.querySelector('.nav__toggle');
     const mobileMenu = document.querySelector('.mobile-menu');
-    const mobileMenuClose = document.querySelector('.mobile-menu__close');
+    const mobileClose = document.querySelector('.mobile-menu__close');
 
     navToggle?.addEventListener('click', () => {
       mobileMenu?.classList.add('open');
     });
 
-    mobileMenuClose?.addEventListener('click', () => {
+    mobileClose?.addEventListener('click', () => {
       mobileMenu?.classList.remove('open');
     });
 
     mobileMenu?.addEventListener('click', (e) => {
-      if (e.target === mobileMenu) {
-        mobileMenu.classList.remove('open');
-      }
+      if (e.target === mobileMenu) mobileMenu.classList.remove('open');
     });
 
     // FAQ Accordion
-    const faqItems = document.querySelectorAll('.faq__item');
-    faqItems.forEach(item => {
-      const question = item.querySelector('.faq__q');
-      const answer = item.querySelector('.faq__a');
-
-      question?.addEventListener('click', () => {
-        const isOpen = question.getAttribute('aria-expanded') === 'true';
-
-        faqItems.forEach(otherItem => {
-          const otherQuestion = otherItem.querySelector('.faq__q');
-          const otherAnswer = otherItem.querySelector('.faq__a');
-          otherQuestion?.setAttribute('aria-expanded', 'false');
-          otherAnswer?.hidden = true;
-        });
-
-        question.setAttribute('aria-expanded', !isOpen);
-        answer.hidden = isOpen;
+    document.querySelectorAll('.faq__item').forEach(item => {
+      const btn = item.querySelector('.faq__q');
+      const ans = item.querySelector('.faq__a');
+      btn?.addEventListener('click', () => {
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq__q').forEach(b => b.setAttribute('aria-expanded', 'false'));
+        document.querySelectorAll('.faq__a').forEach(a => a.hidden = true);
+        btn.setAttribute('aria-expanded', !isOpen);
+        ans.hidden = isOpen;
       });
     });
 
-    // Scroll reveal animation
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -100px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.sr').forEach(el => {
-      observer.observe(el);
-    });
+    // Scroll reveal
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+    }, {threshold: 0.1, rootMargin: '0px 0px -100px 0px'});
+    document.querySelectorAll('.sr').forEach(el => obs.observe(el));
 
     // Nav scroll effect
-    let lastScroll = 0;
     window.addEventListener('scroll', () => {
-      const nav = document.querySelector('.nav');
-      if (window.scrollY > 100) {
-        nav?.classList.add('scrolled');
-      } else {
-        nav?.classList.remove('scrolled');
-      }
+      document.querySelector('.nav')?.classList.toggle('scrolled', window.scrollY > 100);
     });
   </script>
 </body>

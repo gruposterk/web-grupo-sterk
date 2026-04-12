@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Servicios profesionales de remodelación y renovación de apartamentos, casas y espacios comerciales en Panamá. Grupo Sterk Constructora especializada en transformaciones integrales.">
+  <meta name="description" content="Remodelación y renovación de apartamentos, casas y espacios comerciales en Panamá. Grupo Sterk Constructora especializada en transformaciones integrales de calidad.">
   <meta property="og:title" content="Remodelación de Apartamentos y Casas Panamá | Grupo Sterk">
-  <meta property="og:description" content="Servicios profesionales de remodelación y renovación de apartamentos, casas y espacios comerciales en Panamá. Grupo Sterk Constructora.">
+  <meta property="og:description" content="Remodelación y renovación de apartamentos, casas y espacios comerciales en Panamá. Grupo Sterk Constructora.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.sterkpanama.com/remodelacion">
   <meta property="og:image" content="https://www.sterkpanama.com/web-assets/og-image.jpg">
@@ -59,41 +59,33 @@
 </head>
 <body>
   <!-- NAVIGATION -->
-  <nav class="nav nav--solid">
-    <div class="container">
-      <div class="nav__inner">
-        <a href="/" class="nav__logo">
-          <img id="nav-logo" src="/web-assets/Logo_Color.svg" alt="Grupo Sterk">
-        </a>
-        <button class="nav__toggle" id="mobile-toggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="mobile-menu" id="mobile-menu">
-          <button class="mobile-menu__close" id="mobile-close" aria-label="Close menu"></button>
-          <ul class="nav__links">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/servicios">Servicios</a></li>
-            <li><a href="/proyectos">Proyectos</a></li>
-            <li><a href="/acerca-de">Acerca de</a></li>
-            <li><a href="mailto:quiero@sterkpanama.com" class="nav__cta btn btn--primary">Contáctenos</a></li>
-          </ul>
-        </div>
-        <ul class="nav__links">
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/servicios">Servicios</a></li>
-          <li><a href="/proyectos">Proyectos</a></li>
-          <li><a href="/acerca-de">Acerca de</a></li>
-          <li><a href="mailto:quiero@sterkpanama.com" class="nav__cta btn btn--primary">Contáctenos</a></li>
-        </ul>
+  <nav class="nav nav--solid" id="navbar">
+    <div class="container nav__inner">
+      <a href="/"><img src="/web-assets/Logo_Color.svg" alt="Grupo Sterk Constructora" class="nav__logo" id="nav-logo"></a>
+      <div class="nav__links" id="nav-links">
+        <a href="/#servicios">Servicios</a>
+        <a href="/proyectos">Portafolio</a>
+        <a href="/contacto" class="btn btn--primary nav__cta">Contáctenos</a>
       </div>
+      <button class="nav__toggle" id="mobile-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu__close" id="mobile-close" aria-label="Cerrar menú"><span></span><span></span></button>
+    <a href="/">Inicio</a>
+    <a href="/construccion-residencial">Construcción Residencial</a>
+    <a href="/construccion-comercial">Construcción Comercial</a>
+    <a href="/remodelacion">Remodelación</a>
+    <a href="/mantenimiento-industrial">Mantenimiento Industrial</a>
+    <a href="/proyectos">Portafolio</a>
+    <a href="/contacto">Contáctenos</a>
+  </div>
+
   <!-- PAGE HERO -->
   <section class="page-hero">
-    <div class="page-hero__bg" style="background-image: url('/web-assets/projects/platinum-tower/cover.jpg');"></div>
+    <div class="page-hero__bg"><img src="/web-assets/projects/platinum-tower/cover.jpg" alt="Remodelación"></div>
     <div class="page-hero__overlay"></div>
     <div class="container">
       <div class="page-hero__content sr">
@@ -118,127 +110,31 @@
   <!-- MAIN CONTENT -->
   <section class="section">
     <div class="container">
-      <div class="service-layout">
-        <!-- LEFT COLUMN: SERVICE CONTENT -->
-        <div class="service-content">
-          <div class="sr sr-d1">
-            <h2>Remodelación Integral de Espacios en Panamá</h2>
-            <p class="text-light">
-              En Grupo Sterk Constructora, entendemos que remodelar o renovar un espacio es más que cambiar la apariencia física. Se trata de revitalizar ambientes, mejorar funcionalidad y crear espacios que reflejen la visión y estilo de vida de nuestros clientes. Con más de una década de experiencia en el mercado panameño, hemos perfeccionado el arte de transformar espacios residenciales y comerciales en obras maestras de diseño y construcción.
-            </p>
-            <p class="text-light">
-              Nuestro equipo de arquitectos, diseñadores y especialistas en construcción trabaja en sinergia para ejecutar proyectos de remodelación que combinan estética contemporánea con funcionalidad práctica. Cada proyecto es único, y nosotros lo tratamos como tal, adaptando nuestras soluciones a las necesidades específicas, presupuesto y timeline de cada cliente.
-            </p>
-          </div>
+      <div class="sr sr-d1" style="max-width: 800px; margin-bottom: 60px;">
+        <h2>Remodelación Integral de Espacios</h2>
+        <p class="text-light">
+          Transformamos espacios residenciales y comerciales con diseño contemporáneo y calidad excepcional. Nuestro equipo de arquitectos, diseñadores y especialistas trabaja contigo desde la consulta inicial hasta la entrega final.
+        </p>
+        <p class="text-light">
+          Más de 8 años creando espacios que inspiran. Combinamos estética moderna con funcionalidad práctica, adaptando cada solución a tus necesidades específicas, presupuesto y timeline.
+        </p>
+      </div>
 
-          <div class="sr sr-d2" style="margin-top: 40px;">
-            <h3>¿Por qué Elegir Nuestros Servicios de Remodelación?</h3>
-            <p class="text-light">
-              La remodelación es una inversión significativa en tu propiedad. Por eso ofrecemos un proceso transparente, comunicación constante y resultados que superan expectativas. Desde la consulta inicial hasta la entrega final, cuidamos cada detalle para garantizar tu satisfacción.
-            </p>
-            <ul style="margin-top: 20px; margin-left: 20px; line-height: 2;">
-              <li class="text-light"><strong>Diseño Personalizado:</strong> Trabajamos contigo para crear espacios que reflejen tu personalidad y necesidades específicas.</li>
-              <li class="text-light"><strong>Materiales de Calidad:</strong> Seleccionamos proveedores confiables para garantizar durabilidad y acabados premium.</li>
-              <li class="text-light"><strong>Gestión de Proyecto Eficiente:</strong> Cumplimos plazos y presupuestos sin comprometer la calidad.</li>
-              <li class="text-light"><strong>Equipo Multidisciplinario:</strong> Arquitectos, ingenieros y maestros especializados en cada aspecto de la remodelación.</li>
-              <li class="text-light"><strong>Garantía y Postventa:</strong> Respaldamos nuestro trabajo con garantías y servicio postventa excepcional.</li>
-            </ul>
-          </div>
+      <div class="sr sr-d2" style="max-width: 800px; margin-bottom: 40px;">
+        <h2>¿Por Qué Elegir Grupo Sterk?</h2>
+        <ul style="margin-left: 20px; line-height: 1.8;">
+          <li><strong>Diseño Personalizado:</strong> Espacios que reflejan tu visión y necesidades.</li>
+          <li><strong>Materiales Premium:</strong> Proveedores confiables y acabados de calidad.</li>
+          <li><strong>Gestión Eficiente:</strong> Cumplimos plazos y presupuestos sin compromisos.</li>
+          <li><strong>Equipo Multidisciplinario:</strong> Arquitectos, ingenieros y maestros especializados.</li>
+          <li><strong>Garantía Integral:</strong> 1 año de garantía en trabajos + servicio postventa.</li>
+        </ul>
+      </div>
 
-          <div class="sr sr-d3" style="margin-top: 40px;">
-            <h3>Tipos de Remodelaciones que Realizamos</h3>
-            <p class="text-light">
-              Nuestro portafolio abarca distintos tipos de proyectos y espacios:
-            </p>
-            <ul style="margin-top: 20px; margin-left: 20px; line-height: 2;">
-              <li class="text-light"><strong>Apartamentos Residenciales:</strong> Desde renovaciones integrales hasta actualizaciones específicas de cocinas, baños y áreas sociales.</li>
-              <li class="text-light"><strong>Casas Privadas:</strong> Proyectos amplios que pueden incluir expansión, redistribución de espacios y mejora integral de la vivienda.</li>
-              <li class="text-light"><strong>Espacios Comerciales:</strong> Oficinas, locales comerciales y espacios industriales adaptados a necesidades funcionales y estéticas.</li>
-              <li class="text-light"><strong>Áreas Comunes:</strong> Vestíbulos, pasillos, áreas de recreación y espacios comunitarios en complejos residenciales.</li>
-            </ul>
-          </div>
-
-          <div class="sr sr-d4" style="margin-top: 40px;">
-            <h3>Nuestro Proceso de Remodelación</h3>
-            <p class="text-light">
-              Seguimos un proceso estructurado que garantiza éxito desde el inicio:
-            </p>
-            <ol style="margin-top: 20px; margin-left: 20px; line-height: 2; list-style: decimal;">
-              <li class="text-light"><strong>Consulta y Diagnóstico:</strong> Visitamos el espacio, escuchamos tus ideas y evaluamos las condiciones actuales.</li>
-              <li class="text-light"><strong>Propuesta de Diseño:</strong> Presentamos opciones de diseño, materiales y presupuesto.</li>
-              <li class="text-light"><strong>Planificación Detallada:</strong> Creamos un cronograma claro con hitos y entregas parciales.</li>
-              <li class="text-light"><strong>Ejecución Profesional:</strong> Nuestro equipo ejecuta el trabajo con supervisión constante de calidad.</li>
-              <li class="text-light"><strong>Inspección y Entrega:</strong> Verificamos que cada aspecto cumpla con los estándares acordados antes de la entrega final.</li>
-              <li class="text-light"><strong>Servicio Postventa:</strong> Ofrecemos garantía y disponibilidad para ajustes o consultas posteriores.</li>
-            </ol>
-          </div>
-
-          <div style="margin-top: 50px;">
-            <a href="https://wa.me/50762499781" class="btn btn--primary" target="_blank" rel="noopener">
-              Solicitar Presupuesto
-            </a>
-          </div>
-        </div>
-
-        <!-- RIGHT COLUMN: SIDEBAR -->
-        <aside class="sidebar">
-          <!-- SERVICES CARD -->
-          <div class="sidebar__card sr sr-d1">
-            <h4 style="font-size: 1rem; margin-bottom: 20px; font-weight: 500;">Nuestros Servicios</h4>
-            <ul style="line-height: 2;">
-              <li>
-                <a href="/remodelacion" style="color: var(--accent); font-weight: 500; text-decoration: underline;">
-                  ● Remodelación y Renovación
-                </a>
-              </li>
-              <li>
-                <a href="/construccion" style="color: var(--primary); opacity: 0.8;">
-                  ○ Construcción Nueva
-                </a>
-              </li>
-              <li>
-                <a href="/diseno-espacios" style="color: var(--primary); opacity: 0.8;">
-                  ○ Diseño de Espacios
-                </a>
-              </li>
-              <li>
-                <a href="/mantenimiento" style="color: var(--primary); opacity: 0.8;">
-                  ○ Mantenimiento y Reparaciones
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- WHATSAPP CTA CARD -->
-          <div class="sidebar__card sr sr-d2" style="background: linear-gradient(135deg, rgba(124, 185, 193, 0.08), rgba(52, 68, 77, 0.04)); border-left: 4px solid var(--accent);">
-            <h4 style="font-size: 1rem; margin-bottom: 16px; font-weight: 500;">¿Preguntas?</h4>
-            <p class="text-light" style="margin-bottom: 20px;">
-              Contáctanos directamente vía WhatsApp para consultas rápidas y presupuestos.
-            </p>
-            <a href="https://wa.me/50762499781" class="btn btn--primary" target="_blank" rel="noopener" style="width: 100%; justify-content: center;">
-              Enviar WhatsApp
-            </a>
-          </div>
-
-          <!-- CONTACT INFO CARD -->
-          <div class="sidebar__card sr sr-d3">
-            <h4 style="font-size: 1rem; margin-bottom: 16px; font-weight: 500;">Información de Contacto</h4>
-            <ul style="line-height: 2.2;">
-              <li style="font-size: 0.9rem;">
-                <strong>Teléfono:</strong><br>
-                <a href="tel:+50762499781" style="color: var(--accent);">+507-6249-9781</a>
-              </li>
-              <li style="font-size: 0.9rem;">
-                <strong>Email:</strong><br>
-                <a href="mailto:quiero@sterkpanama.com" style="color: var(--accent);">quiero@sterkpanama.com</a>
-              </li>
-              <li style="font-size: 0.9rem;">
-                <strong>Ubicación:</strong><br>
-                <span class="text-light">Sortis Business Tower, Piso 22, Oficina 22-02</span>
-              </li>
-            </ul>
-          </div>
-        </aside>
+      <div style="text-align: center; margin-bottom: 40px;">
+        <a href="https://wa.me/50762499781" class="btn btn--primary sr sr-d3" target="_blank" rel="noopener">
+          Solicitar Presupuesto
+        </a>
       </div>
     </div>
   </section>
@@ -248,72 +144,69 @@
     <div class="container">
       <div class="sr sr-d1" style="text-align: center; margin-bottom: 60px;">
         <span class="label label--accent" style="justify-content: center;">Nuestro Trabajo</span>
-        <h2>Proyectos de Remodelación Destacados</h2>
-        <p class="text-light" style="max-width: 600px; margin: 20px auto 0;">
-          Explora algunos de nuestros proyectos más representativos de remodelación y renovación en Panamá.
-        </p>
+        <h2>Proyectos Destacados</h2>
       </div>
 
       <div class="portfolio-grid sr sr-d2">
         <!-- Project 1: Chill In -->
-        <a href="/proyectos/chill-in" class="card">
-          <div class="card__overlay" style="background-image: url('/web-assets/projects/chill-in/cover.jpg');"></div>
-          <div style="padding: 24px;">
+        <div class="card sr">
+          <img src="/web-assets/projects/chill-in/cover.jpg" alt="Chill In" loading="lazy">
+          <div class="card__overlay">
             <span class="card__cat">Remodelación</span>
-            <h3 class="card__title">Chill In</h3>
-            <p class="card__desc">Remodelación integral de local comercial</p>
+            <span class="card__title">Chill In</span>
+            <span class="card__desc">Remodelación integral de local comercial</span>
           </div>
-        </a>
+        </div>
 
         <!-- Project 2: Platinum Tower -->
-        <a href="/proyectos/platinum-tower" class="card">
-          <div class="card__overlay" style="background-image: url('/web-assets/projects/platinum-tower/cover.jpg');"></div>
-          <div style="padding: 24px;">
+        <div class="card sr">
+          <img src="/web-assets/projects/platinum-tower/cover.jpg" alt="Platinum Tower" loading="lazy">
+          <div class="card__overlay">
             <span class="card__cat">Renovación</span>
-            <h3 class="card__title">Platinum Tower</h3>
-            <p class="card__desc">Renovación completa de apartamento de lujo</p>
+            <span class="card__title">Platinum Tower</span>
+            <span class="card__desc">Renovación completa de apartamento de lujo</span>
           </div>
-        </a>
+        </div>
 
         <!-- Project 3: Terrazas del Parque -->
-        <a href="/proyectos/terrazas-del-parque" class="card">
-          <div class="card__overlay" style="background-image: url('/web-assets/projects/terrazas-del-parque/cover.jpg');"></div>
-          <div style="padding: 24px;">
+        <div class="card sr">
+          <img src="/web-assets/projects/terrazas-del-parque/cover.jpg" alt="Terrazas del Parque" loading="lazy">
+          <div class="card__overlay">
             <span class="card__cat">Renovación</span>
-            <h3 class="card__title">Terrazas del Parque</h3>
-            <p class="card__desc">Renovación integral de apartamento</p>
+            <span class="card__title">Terrazas del Parque</span>
+            <span class="card__desc">Renovación integral de apartamento</span>
           </div>
-        </a>
+        </div>
 
         <!-- Project 4: Casa Williams -->
-        <a href="/proyectos/casa-williams" class="card">
-          <div class="card__overlay" style="background-image: url('/web-assets/projects/casa-williams/cover.jpg');"></div>
-          <div style="padding: 24px;">
+        <div class="card sr">
+          <img src="/web-assets/projects/casa-williams/cover.jpg" alt="Casa Williams" loading="lazy">
+          <div class="card__overlay">
             <span class="card__cat">Remodelación</span>
-            <h3 class="card__title">Casa Williams</h3>
-            <p class="card__desc">Remodelación de residencia privada</p>
+            <span class="card__title">Casa Williams</span>
+            <span class="card__desc">Remodelación de residencia privada</span>
           </div>
-        </a>
+        </div>
 
         <!-- Project 5: Sortis Business Tower -->
-        <a href="/proyectos/sortis" class="card">
-          <div class="card__overlay" style="background-image: url('/web-assets/projects/sortis/cover.jpg');"></div>
-          <div style="padding: 24px;">
+        <div class="card sr">
+          <img src="/web-assets/projects/sortis/cover.jpg" alt="Sortis Business Tower" loading="lazy">
+          <div class="card__overlay">
             <span class="card__cat">Oficina Corporativa</span>
-            <h3 class="card__title">Sortis Business Tower</h3>
-            <p class="card__desc">Remodelación de oficina corporativa</p>
+            <span class="card__title">Sortis Business Tower</span>
+            <span class="card__desc">Remodelación de oficina corporativa</span>
           </div>
-        </a>
+        </div>
 
         <!-- Project 6: MLC Multimodal Logistics -->
-        <a href="/proyectos/milla-8" class="card">
-          <div class="card__overlay" style="background-image: url('/web-assets/projects/milla-8/cover.jpg');"></div>
-          <div style="padding: 24px;">
+        <div class="card sr">
+          <img src="/web-assets/projects/milla-8/cover.jpg" alt="MLC — Multimodal Logistics" loading="lazy">
+          <div class="card__overlay">
             <span class="card__cat">Espacio Industrial</span>
-            <h3 class="card__title">MLC — Multimodal Logistics</h3>
-            <p class="card__desc">Remodelación de espacio comercial e industrial</p>
+            <span class="card__title">MLC — Multimodal Logistics</span>
+            <span class="card__desc">Remodelación de espacio comercial e industrial</span>
           </div>
-        </a>
+        </div>
       </div>
 
       <div style="text-align: center; margin-top: 50px;">
@@ -327,76 +220,34 @@
     <div class="container">
       <div class="sr sr-d1" style="text-align: center; margin-bottom: 60px;">
         <span class="label label--accent" style="justify-content: center;">Preguntas Frecuentes</span>
-        <h2>Todo lo que Necesitas Saber Sobre Remodelación</h2>
+        <h2>Todo lo que Necesitas Saber</h2>
       </div>
 
       <div class="faq sr sr-d2" style="max-width: 800px; margin: 0 auto;">
         <div class="faq__item">
           <button class="faq__q">
-            <span>¿Cuál es el tiempo promedio para una remodelación completa?</span>
+            <span>¿Cuál es el tiempo promedio para una remodelación?</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 8L10 11L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </button>
           <div class="faq__a">
             <p class="text-light">
-              El tiempo varía según el alcance del proyecto. Una renovación de apartamento típica puede tomar entre 4 a 8 semanas, mientras que proyectos más complejos pueden extenderse a 3 o 4 meses. En la consulta inicial proporcionamos un cronograma detallado basado en el alcance específico.
+              Una remodelación de apartamento típica toma 4 a 8 semanas. Proyectos más complejos pueden extenderse a 3 o 4 meses. Proporcionamos un cronograma detallado en la consulta inicial.
             </p>
           </div>
         </div>
 
         <div class="faq__item">
           <button class="faq__q">
-            <span>¿Puedo permanecer en mi apartamento durante la remodelación?</span>
+            <span>¿Ofrecen garantía en los trabajos?</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 8L10 11L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </button>
           <div class="faq__a">
             <p class="text-light">
-              Esto depende del tipo y alcance de la remodelación. Para proyectos localizados (baño o cocina), generalmente es posible. Para renovaciones integrales, recomendamos desalojar temporalmente por seguridad y calidad de vida. Discutimos opciones en la consulta inicial.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <button class="faq__q">
-            <span>¿Cómo se estructura el presupuesto de una remodelación?</span>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 8L10 11L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </button>
-          <div class="faq__a">
-            <p class="text-light">
-              Ofrecemos presupuestos detallados que incluyen: materiales, mano de obra, diseño, permisos y contingencias. El presupuesto es transparente y no tiene sorpresas ocultas. Trabajamos con diferentes opciones de materiales para adaptarnos a varios rangos presupuestarios.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <button class="faq__q">
-            <span>¿Qué incluye el servicio de diseño en una remodelación?</span>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 8L10 11L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </button>
-          <div class="faq__a">
-            <p class="text-light">
-              Nuestro servicio de diseño incluye: propuestas de layout, selección de colores y materiales, planos arquitectónicos, visualización 3D, especificaciones técnicas y coordinación con proveedores. Trabajamos iterativamente para asegurar que el diseño final refleje tu visión.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <button class="faq__q">
-            <span>¿Ofrecen garantía en los trabajos realizados?</span>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 8L10 11L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </button>
-          <div class="faq__a">
-            <p class="text-light">
-              Sí, ofrecemos garantía integral en todos nuestros trabajos. La mayoría de trabajos tiene garantía de 1 año, y los materiales tienen la garantía de fábrica correspondiente. Además, disponemos de servicio postventa para ajustes o consultas posteriores a la entrega.
+              Sí, garantía integral de 1 año en trabajos más garantía de fábrica en materiales. Disponemos de servicio postventa para ajustes o consultas posteriores.
             </p>
           </div>
         </div>
@@ -410,7 +261,7 @@
       <div class="sr sr-d1">
         <h2 style="color: white; margin-bottom: 20px;">Transforma tu Espacio Hoy</h2>
         <p style="color: rgba(255, 255, 255, 0.9); font-weight: 300; max-width: 600px; margin: 0 auto 40px;">
-          Contáctanos hoy para una consulta gratuita. Te ayudaremos a visualizar las posibilidades de tu espacio y crearemos un plan de remodelación personalizado.
+          Contáctanos para una consulta gratuita. Te ayudaremos a visualizar las posibilidades de tu espacio.
         </p>
         <div class="cta__btns" style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
           <a href="https://wa.me/50762499781" class="btn btn--white" target="_blank" rel="noopener">Enviar WhatsApp</a>
@@ -432,7 +283,7 @@
           <h4>Navegación</h4>
           <div class="footer__links">
             <a href="/">Inicio</a>
-            <a href="/construccion-residencial">Servicios</a>
+            <a href="/#servicios">Servicios</a>
             <a href="/proyectos">Portafolio</a>
             <a href="/contacto">Contacto</a>
           </div>
@@ -473,7 +324,7 @@
   <script src="/js/shared.js"></script>
   <script>
     // Navigation toggle
-    const navToggle = document.getElementById('nav-toggle');
+    const navToggle = document.getElementById('mobile-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileClose = document.getElementById('mobile-close');
 

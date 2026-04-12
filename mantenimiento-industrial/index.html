@@ -3,21 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Servicios profesionales de mantenimiento industrial y comercial en Panamá. Preventivo, correctivo y predictivo. Grupo Sterk Constructora.">
-  <meta name="keywords" content="mantenimiento industrial Panamá, mantenimiento comercial, mantenimiento preventivo, mantenimiento correctivo">
-  <meta name="theme-color" content="#34444D">
+  <title>Mantenimiento Industrial y Comercial Panamá | Grupo Sterk</title>
+  <meta name="description" content="Mantenimiento preventivo y correctivo para infraestructuras industriales y comerciales en Panamá. Grupo Sterk Constructora.">
+  <link rel="canonical" href="https://www.sterkpanama.com/mantenimiento-industrial">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Mantenimiento Industrial y Comercial Panamá | Grupo Sterk">
-  <meta property="og:description" content="Servicios profesionales de mantenimiento industrial y comercial en Panamá. Preventivo, correctivo y predictivo.">
+  <meta property="og:description" content="Mantenimiento preventivo y correctivo para infraestructuras industriales y comerciales en Panamá.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.sterkpanama.com/mantenimiento-industrial">
   <meta property="og:image" content="https://www.sterkpanama.com/web-assets/projects/banco-lafise/cover.jpg">
+  <meta property="og:locale" content="es_PA">
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://www.sterkpanama.com/mantenimiento-industrial">
-
-  <!-- Structured Data: Service + BreadcrumbList -->
+  <!-- JSON-LD: Service -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -28,663 +26,161 @@
       "name": "Grupo Sterk Constructora",
       "url": "https://www.sterkpanama.com",
       "logo": "https://www.sterkpanama.com/web-assets/Logo_Color.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Customer Service",
-        "telephone": "+507-6249-9781",
-        "email": "quiero@sterkpanama.com"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Sortis Business Tower, Piso 22, Oficina 22-02",
-        "addressCountry": "PA"
-      }
+      "telephone": "+507-6249-9781",
+      "email": "quiero@sterkpanama.com"
     },
-    "description": "Servicios profesionales de mantenimiento industrial y comercial. Preventivo, correctivo y predictivo para infraestructuras críticas en Panamá.",
-    "serviceType": "Mantenimiento Industrial",
-    "areaServed": "PA",
-    "url": "https://www.sterkpanama.com/mantenimiento-industrial"
+    "description": "Mantenimiento preventivo y correctivo para infraestructuras industriales y comerciales en Panamá.",
+    "areaServed": "PA"
   }
   </script>
 
+  <!-- JSON-LD: BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://www.sterkpanama.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Mantenimiento Industrial",
-        "item": "https://www.sterkpanama.com/mantenimiento-industrial"
-      }
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.sterkpanama.com" },
+      { "@type": "ListItem", "position": 2, "name": "Mantenimiento Industrial", "item": "https://www.sterkpanama.com/mantenimiento-industrial" }
     ]
   }
   </script>
 
-  <title>Mantenimiento Industrial y Comercial Panamá | Grupo Sterk</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="/css/styles.css">
-  <style>
-    .service-layout {
-      display: grid;
-      grid-template-columns: 1fr 320px;
-      gap: 40px;
-      align-items: start;
-    }
-
-    @media (max-width: 768px) {
-      .service-layout {
-        grid-template-columns: 1fr;
-        gap: 32px;
-      }
-    }
-
-    .service-content h2 {
-      margin-top: 32px;
-      margin-bottom: 16px;
-    }
-
-    .service-content h3 {
-      margin-top: 24px;
-      margin-bottom: 12px;
-    }
-
-    .service-content p {
-      margin-bottom: 16px;
-      color: var(--secondary);
-      line-height: 1.8;
-    }
-
-    .service-content ul {
-      margin: 20px 0 20px 20px;
-      color: var(--secondary);
-    }
-
-    .service-content li {
-      list-style: disc;
-      margin-bottom: 10px;
-      line-height: 1.7;
-    }
-
-    .sidebar {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    .sidebar__card {
-      background: var(--off-white);
-      padding: 24px;
-      border-radius: 3px;
-      border-top: 3px solid var(--accent);
-    }
-
-    .sidebar__card h3 {
-      font-size: 1rem;
-      margin-bottom: 16px;
-      color: var(--primary);
-    }
-
-    .sidebar__card ul {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .sidebar__card a {
-      font-size: 0.85rem;
-      color: var(--secondary);
-      transition: color 0.2s ease;
-      padding-left: 8px;
-      border-left: 2px solid transparent;
-      transition: border-color 0.2s ease, color 0.2s ease;
-    }
-
-    .sidebar__card a:hover {
-      color: var(--accent);
-      border-left-color: var(--accent);
-    }
-
-    .sidebar__card a.active {
-      color: var(--accent);
-      border-left-color: var(--accent);
-      font-weight: 500;
-    }
-
-    .sidebar__card.wa-card {
-      background: linear-gradient(135deg, #25D366 0%, #1DA851 100%);
-      border-top-color: #fff;
-      text-align: center;
-    }
-
-    .sidebar__card.wa-card h3 {
-      color: white;
-    }
-
-    .sidebar__card.wa-card p {
-      color: rgba(255,255,255,0.9);
-      font-size: 0.9rem;
-      margin-bottom: 16px;
-    }
-
-    .sidebar__card.wa-card .btn {
-      width: 100%;
-      justify-content: center;
-    }
-
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 32px;
-      margin-bottom: 40px;
-    }
-
-    .card {
-      background: var(--white);
-      border-radius: 3px;
-      overflow: hidden;
-      border: 1px solid var(--light-gray);
-      transition: all 0.3s ease;
-    }
-
-    .card:hover {
-      box-shadow: 0 12px 32px rgba(52, 68, 77, 0.12);
-      transform: translateY(-4px);
-    }
-
-    .card img {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
-    }
-
-    .card__cat {
-      display: block;
-      font-size: 0.65rem;
-      font-weight: 500;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 8px;
-    }
-
-    .card__title {
-      font-size: 1.1rem;
-      color: var(--primary);
-      margin-bottom: 8px;
-      font-weight: 400;
-    }
-
-    .card__desc {
-      color: var(--secondary);
-      font-size: 0.9rem;
-      line-height: 1.6;
-    }
-
-    .card > div {
-      padding: 24px;
-    }
-
-    .faq {
-      max-width: 800px;
-    }
-
-    .faq__item {
-      margin-bottom: 20px;
-      border-bottom: 1px solid var(--light-gray);
-      padding-bottom: 20px;
-    }
-
-    .faq__item:last-child {
-      border-bottom: none;
-    }
-
-    .faq__q {
-      font-weight: 500;
-      color: var(--primary);
-      margin-bottom: 12px;
-      cursor: pointer;
-      user-select: none;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .faq__q::before {
-      content: '+';
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 24px;
-      height: 24px;
-      background: var(--accent);
-      color: white;
-      font-weight: 300;
-      flex-shrink: 0;
-      transition: all 0.3s ease;
-    }
-
-    .faq__item.open .faq__q::before {
-      transform: rotate(45deg);
-    }
-
-    .faq__a {
-      color: var(--secondary);
-      font-size: 0.95rem;
-      line-height: 1.7;
-      display: none;
-      padding-left: 36px;
-    }
-
-    .faq__item.open .faq__a {
-      display: block;
-    }
-
-    .cta {
-      background: linear-gradient(135deg, var(--primary) 0%, #2a3a42 100%);
-      color: white;
-      padding: 60px 0;
-      text-align: center;
-    }
-
-    .cta h2 {
-      color: white;
-      margin-bottom: 16px;
-    }
-
-    .cta p {
-      color: rgba(255,255,255,0.9);
-      margin-bottom: 32px;
-      font-size: 1.05rem;
-    }
-
-    .cta__btns {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .cta .btn--white {
-      background: rgba(255,255,255,0.15);
-    }
-
-    .cta .btn--white:hover {
-      background: rgba(255,255,255,0.25);
-    }
-
-    .page-hero {
-      position: relative;
-      min-height: 480px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 70px;
-    }
-
-    .page-hero__bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-size: cover;
-      background-position: center;
-      z-index: 1;
-    }
-
-    .page-hero__overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(52, 68, 77, 0.65);
-      z-index: 2;
-    }
-
-    .page-hero__content {
-      position: relative;
-      z-index: 3;
-      color: white;
-      text-align: center;
-    }
-
-    .page-hero__sub {
-      font-size: 1.2rem;
-      color: rgba(255,255,255,0.9);
-      font-weight: 300;
-    }
-
-    .breadcrumb {
-      font-size: 0.9rem;
-      color: var(--secondary);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .breadcrumb a {
-      color: var(--accent);
-      transition: color 0.2s ease;
-    }
-
-    .breadcrumb a:hover {
-      color: var(--accent-dark);
-    }
-
-    .breadcrumb__sep {
-      color: var(--light-gray);
-    }
-
-    .breadcrumb__current {
-      color: var(--primary);
-      font-weight: 500;
-    }
-
-    .wa-fab {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: #25D366;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
-      transition: all 0.3s ease;
-      z-index: 99;
-    }
-
-    .wa-fab:hover {
-      background: #1DA851;
-      transform: scale(1.1);
-      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
-    }
-
-    @media (max-width: 768px) {
-      .wa-fab {
-        width: 48px;
-        height: 48px;
-        bottom: 16px;
-        right: 16px;
-      }
-
-      .page-hero {
-        min-height: 320px;
-        margin-top: 60px;
-      }
-    }
-  </style>
+  <link rel="icon" type="image/svg+xml" href="/web-assets/Logo_Color.svg">
 </head>
 <body>
 
-  <!-- ===== NAVIGATION ===== -->
-  <nav class="nav nav--solid">
-    <div class="container">
-      <div class="nav__inner">
-        <a href="/" class="nav__logo">
-          <img src="/web-assets/Logo_Color.svg" alt="Grupo Sterk" id="nav-logo">
-        </a>
-
-        <div class="nav__links">
-          <a href="/">Inicio</a>
-          <a href="/servicios">Servicios</a>
-          <a href="/proyectos">Proyectos</a>
-          <a href="/contacto">Contacto</a>
-        </div>
-
-        <a href="tel:+50762499781" class="btn btn--primary nav__cta">Contactar</a>
-
-        <button class="nav__toggle" id="mobile-toggle">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
+  <!-- ===== NAV ===== -->
+  <nav class="nav nav--solid" id="navbar">
+    <div class="container nav__inner">
+      <a href="/"><img src="/web-assets/Logo_Color.svg" alt="Grupo Sterk Constructora" class="nav__logo" id="nav-logo"></a>
+      <div class="nav__links" id="nav-links">
+        <a href="/#servicios">Servicios</a>
+        <a href="/proyectos">Portafolio</a>
+        <a href="/contacto" class="btn btn--primary nav__cta">Contáctenos</a>
       </div>
+      <button class="nav__toggle" id="mobile-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobile-menu">
-    <button class="mobile-menu__close" id="mobile-close">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-      </svg>
-    </button>
-    <div class="nav__links" style="flex-direction: column; gap: 24px; padding: 60px 24px;">
-      <a href="/">Inicio</a>
-      <a href="/servicios">Servicios</a>
-      <a href="/proyectos">Proyectos</a>
-      <a href="/contacto">Contacto</a>
-      <a href="tel:+50762499781" class="btn btn--primary" style="width: fit-content;">Contactar</a>
-    </div>
+    <button class="mobile-menu__close" id="mobile-close" aria-label="Cerrar menú"><span></span><span></span></button>
+    <a href="/">Inicio</a>
+    <a href="/construccion-residencial">Construcción Residencial</a>
+    <a href="/construccion-comercial">Construcción Comercial</a>
+    <a href="/remodelacion">Remodelación</a>
+    <a href="/mantenimiento-industrial">Mantenimiento Industrial</a>
+    <a href="/proyectos">Portafolio</a>
+    <a href="/contacto">Contáctenos</a>
   </div>
 
-  <!-- ===== PAGE HERO ===== -->
-  <section class="page-hero">
-    <div class="page-hero__bg" style="background-image: url('/web-assets/projects/banco-lafise/cover.jpg');"></div>
-    <div class="page-hero__overlay"></div>
-    <div class="page-hero__content">
+  <main>
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="page-hero__bg">
+        <img src="/web-assets/projects/banco-lafise/cover.jpg" alt="Mantenimiento industrial en Panamá" width="1600" height="1200">
+      </div>
+      <div class="page-hero__overlay"></div>
+      <div class="container page-hero__content">
+        <span class="label label--accent sr">Nuestros Servicios</span>
+        <h1 class="sr sr-d1">Mantenimiento Industrial</h1>
+        <p class="page-hero__sub sr sr-d2">Servicios especializados de mantenimiento preventivo y correctivo para su infraestructura.</p>
+        <nav class="breadcrumb sr sr-d3">
+          <ol>
+            <li><a href="/">Inicio</a></li>
+            <li><span class="breadcrumb__sep">/</span></li>
+            <li><span class="breadcrumb__current">Mantenimiento Industrial</span></li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ===== CONTENT ===== -->
+    <section class="section">
       <div class="container">
-        <h1 class="sr sr-d1">Mantenimiento Industrial y Comercial</h1>
-        <p class="page-hero__sub sr sr-d2">Soluciones profesionales de mantenimiento para tu infraestructura crítica</p>
-      </div>
-    </div>
-  </section>
+        <div class="service-layout">
 
-  <!-- ===== BREADCRUMB ===== -->
-  <div class="container" style="padding: 24px 0;">
-    <div class="breadcrumb">
-      <a href="/">Inicio</a>
-      <span class="breadcrumb__sep">/</span>
-      <span class="breadcrumb__current">Mantenimiento Industrial</span>
-    </div>
-  </div>
+          <!-- Main Content -->
+          <div class="service-content sr">
+            <h2>Mantenimiento preventivo y correctivo en Panamá</h2>
+            <p>Protegemos la inversión de su infraestructura con programas de mantenimiento diseñados para maximizar la vida útil de sus instalaciones y minimizar paros inesperados.</p>
 
-  <!-- ===== SERVICE CONTENT ===== -->
-  <section class="section">
-    <div class="container">
-      <div class="service-layout">
+            <h2>Servicios especializados</h2>
+            <p>Desde inspecciones programadas hasta reparaciones de emergencia, cubrimos sistemas eléctricos, hidráulicos, estructurales y de climatización para edificios comerciales e industriales.</p>
 
-        <!-- Main Content -->
-        <div class="service-content sr sr-d1">
+            <h2>Compromiso con la seguridad</h2>
+            <p>Cada intervención se ejecuta bajo estrictos protocolos de seguridad industrial, cumpliendo normativas vigentes y garantizando un entorno seguro para su operación.</p>
 
-          <p style="font-size: 1.05rem; line-height: 1.8;">
-            En <strong>Grupo Sterk Constructora</strong>, ofrecemos servicios integrales de mantenimiento industrial y comercial diseñados para garantizar el funcionamiento óptimo de tu infraestructura, maximizar la eficiencia operativa y extender la vida útil de tus equipos. Con más de una década de experiencia en Panamá, nuestro equipo de especialistas proporciona soluciones confiables adaptadas a las necesidades específicas de cada cliente.
-          </p>
+            <!-- Project -->
+            <div style="margin-top:48px">
+              <span class="label label--accent">Proyecto destacado</span>
+              <h2>Nuestro trabajo</h2>
+              <div class="portfolio-grid" style="margin-top:24px">
+                <div class="card sr">
+                  <img src="/web-assets/projects/banco-lafise/cover.jpg" alt="Banco Lafise — Mantenimiento industrial en Panamá" loading="lazy" width="800" height="600">
+                  <div class="card__overlay">
+                    <span class="card__cat">Mantenimiento Industrial</span>
+                    <span class="card__title">Banco Lafise</span>
+                    <span class="card__desc">Mantenimiento preventivo y correctivo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <h2>¿Por qué elegir nuestros servicios?</h2>
-          <p>
-            El mantenimiento industrial y comercial es fundamental para evitar costosos paros operativos, garantizar la seguridad del personal y cumplir con normativas técnicas vigentes. Nuestros servicios abarcan tanto mantenimiento preventivo para optimizar el rendimiento como correctivo para resolver problemas identificados y predictivo basado en análisis de datos.
-          </p>
-          <ul>
-            <li>Equipo técnico especializado con certificaciones internacionales</li>
-            <li>Respuesta rápida ante emergencias y paros inesperados</li>
-            <li>Planes de mantenimiento personalizados según tu operación</li>
-            <li>Uso de tecnología de diagnóstico avanzada</li>
-            <li>Cumplimiento total de normas de seguridad y regulaciones</li>
-            <li>Documentación detallada de trabajos realizados</li>
-          </ul>
-
-          <h2>Servicios de Mantenimiento Industrial</h2>
-          <p>
-            Ofrecemos una gama completa de servicios que cubren todos los aspectos del mantenimiento industrial moderno. Ya sea que necesites optimizar operaciones existentes o resolver problemas específicos, nuestros especialistas están preparados para actuar con eficiencia y profesionalismo.
-          </p>
-
-          <h3>Mantenimiento Preventivo</h3>
-          <p>
-            Realizamos inspecciones periódicas, servicios programados y actualizaciones de equipos para prevenir fallas. Este enfoque reduce significativamente los tiempos de parada no planificada y extiende la vida operativa de tus sistemas, garantizando disponibilidad continua.
-          </p>
-
-          <h3>Mantenimiento Correctivo</h3>
-          <p>
-            Ante fallas identificadas, contamos con equipos móviles y personal disponible 24/7 para reparaciones y restauración de funcionalidad. Nuestro objetivo es minimizar el tiempo de inactividad y restaurar la operación normal en el menor tiempo posible.
-          </p>
-
-          <h3>Mantenimiento Predictivo</h3>
-          <p>
-            Utilizamos monitoreo continuo, análisis de vibraciones, termografía infrarroja y otras técnicas avanzadas para identificar potenciales fallas antes de que ocurran. Este enfoque permite planificar intervenciones de manera óptima sin impacto operativo.
-          </p>
-
-          <h2>Áreas de Especialización</h2>
-          <p>
-            Nuestros técnicos tienen experiencia comprobada en múltiples sectores industriales y comerciales, incluyendo sistemas HVAC, maquinaria pesada, sistemas eléctricos de alta tensión, líneas de producción, plantas de tratamiento, infraestructura de telecomunicaciones y más.
-          </p>
-          <ul>
-            <li>Sistemas de climatización (HVAC) e instalaciones térmicas</li>
-            <li>Maquinaria industrial y equipos de producción</li>
-            <li>Sistemas eléctricos y subestaciones</li>
-            <li>Instalaciones de tuberías y sistemas hidráulicos</li>
-            <li>Equipos de seguridad y sistemas contra incendios</li>
-            <li>Infraestructura de data centers y telecomunicaciones</li>
-          </ul>
-
-          <h2>Proyectos Destacados</h2>
-          <p>
-            Hemos consolidado nuestra reputación trabajando con las organizaciones más exigentes de Panamá. Nuestro portafolio incluye proyectos en instituciones financieras, centros comerciales, hospitales, industrias manufactureras y múltiples infraestructuras críticas. Cada proyecto es un testimonio de nuestro compromiso con la excelencia y la confiabilidad.
-          </p>
-
-        </div>
-
-        <!-- Sidebar -->
-        <aside class="sidebar">
-
-          <!-- Services Card -->
-          <div class="sidebar__card sr sr-d2">
-            <h3>Nuestros Servicios</h3>
-            <ul>
-              <li><a href="/mantenimiento-industrial" class="active">Mantenimiento Industrial</a></li>
-              <li><a href="/diseño-construccion">Diseño & Construcción</a></li>
-              <li><a href="/reparacion-estructural">Reparación Estructural</a></li>
-              <li><a href="/consultoría-técnica">Consultoría Técnica</a></li>
-            </ul>
+            <!-- FAQ -->
+            <div class="faq" style="margin-top:48px">
+              <span class="label label--accent">Preguntas Frecuentes</span>
+              <div class="faq__item">
+                <div class="faq__q">¿Qué tipos de mantenimiento ofrecen?</div>
+                <div class="faq__a"><p>Ofrecemos mantenimiento preventivo programado y correctivo de emergencia para instalaciones industriales y comerciales.</p></div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__q">¿Trabajan con contratos de mantenimiento periódico?</div>
+                <div class="faq__a"><p>Sí, diseñamos planes de mantenimiento a medida con frecuencia mensual, trimestral o según las necesidades de su operación.</p></div>
+              </div>
+            </div>
           </div>
 
-          <!-- WhatsApp CTA -->
-          <div class="sidebar__card wa-card sr sr-d3">
-            <h3>¿Necesitas ayuda?</h3>
-            <p>Contáctanos por WhatsApp para consultas rápidas sobre nuestros servicios</p>
-            <a href="https://wa.me/50762499781" class="btn btn--white" target="_blank">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.892 1.242l-.612-.31-6.36 1.674.36 5.694 1.682 2.794a9.864 9.864 0 001.516 5.514l.375.577 5.728-1.507.525.682a9.87 9.87 0 004.802 1.276h.005c5.487 0 9.97-4.484 9.97-9.972 0-2.661-1.04-5.165-2.927-7.045-1.887-1.879-4.39-2.916-7.034-2.916"/>
-              </svg>
-              Contactar por WhatsApp
-            </a>
-          </div>
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <div class="sidebar__card">
+              <h4>Servicios</h4>
+              <a href="/construccion-residencial">Construcción Residencial</a>
+              <a href="/construccion-comercial">Construcción Comercial</a>
+              <a href="/remodelacion">Remodelación</a>
+              <a href="/mantenimiento-industrial" style="color:var(--accent)">Mantenimiento Industrial</a>
+            </div>
+            <div class="sidebar__card" style="background:var(--primary);color:var(--white)">
+              <h4 style="color:var(--accent)">¿Necesita mantenimiento?</h4>
+              <p style="font-size:.85rem;font-weight:300;color:rgba(255,255,255,.7);margin-bottom:14px">Solicite una evaluación sin compromiso.</p>
+              <a href="https://wa.me/50762499781?text=Hola%2C%20necesito%20servicios%20de%20mantenimiento" class="btn btn--primary" style="width:100%;justify-content:center" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+          </aside>
 
-        </aside>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PORTFOLIO SECTION ===== -->
-  <section class="section" style="background: var(--off-white);">
-    <div class="container">
-      <div style="text-align: center; margin-bottom: 60px;">
-        <span class="label label--accent">Proyectos</span>
-        <h2 class="sr sr-d1">Casos de Éxito</h2>
-      </div>
-
-      <div class="portfolio-grid">
-
-        <!-- Project Card: Banco Lafise -->
-        <div class="card sr sr-d2">
-          <img src="/web-assets/projects/banco-lafise/cover.jpg" alt="Proyecto Banco Lafise - Mantenimiento Preventivo y Correctivo">
-          <div>
-            <span class="card__cat">Mantenimiento Industrial</span>
-            <h3 class="card__title">Banco Lafise</h3>
-            <p class="card__desc">Mantenimiento preventivo y correctivo de sistemas HVAC, eléctricos y de seguridad. Implementación de plan de mantenimiento predictivo con monitoreo continuo.</p>
-          </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== FAQ SECTION ===== -->
-  <section class="section">
-    <div class="container">
-      <div style="text-align: center; margin-bottom: 60px;">
-        <span class="label label--accent">Preguntas Frecuentes</span>
-        <h2 class="sr sr-d1">Dudas Comunes sobre Mantenimiento Industrial</h2>
+    <!-- ===== CTA ===== -->
+    <section class="cta">
+      <div class="container sr">
+        <h2>Proteja su infraestructura con mantenimiento profesional</h2>
+        <p>Programe una inspección y reciba un plan de mantenimiento personalizado.</p>
+        <div class="cta__btns">
+          <a href="https://wa.me/50762499781?text=Hola%2C%20necesito%20mantenimiento%20industrial" class="btn btn--white" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="mailto:quiero@sterkpanama.com" class="btn btn--white">Email</a>
+        </div>
       </div>
-
-      <div class="faq sr sr-d2">
-
-        <div class="faq__item">
-          <h3 class="faq__q">¿Con qué frecuencia debe realizarse el mantenimiento industrial?</h3>
-          <p class="faq__a">
-            La frecuencia del mantenimiento depende de varios factores: tipo de equipo, intensidad de uso, entorno operativo y recomendaciones del fabricante. Generalmente, el mantenimiento preventivo se realiza cada 3 a 6 meses. En Grupo Sterk creamos planes personalizados basados en el análisis específico de tu operación para optimizar costo-beneficio y eficiencia operacional.
-          </p>
-        </div>
-
-        <div class="faq__item">
-          <h3 class="faq__q">¿Ofrecen servicio de emergencia 24/7?</h3>
-          <p class="faq__a">
-            Sí. Contamos con equipos disponibles durante 24 horas, 7 días a la semana para atender emergencias y paros inesperados. Nuestro objetivo es minimizar el tiempo de inactividad y restaurar la operación normal en el menor tiempo posible. Contacta a nuestro equipo de respuesta rápida ante cualquier contingencia operativa.
-          </p>
-        </div>
-
-        <div class="faq__item">
-          <h3 class="faq__q">¿Qué equipos y herramientas utilizan para diagnóstico?</h3>
-          <p class="faq__a">
-            Utilizamos tecnología de diagnóstico avanzada incluyendo analizadores de vibraciones, cámaras termográficas infrarrojo, medidores de aislamiento eléctrico, analizadores de potencia y herramientas de monitoreo predictivo. Esto nos permite identificar potenciales fallas antes de que causen paros operativos y planificar intervenciones de forma óptima.
-          </p>
-        </div>
-
-        <div class="faq__item">
-          <h3 class="faq__q">¿Realizan trabajos en empresas de todos los tamaños?</h3>
-          <p class="faq__a">
-            Absolutamente. Hemos trabajado con pequeñas operaciones, medianas empresas e industrias grandes. Cada cliente recibe atención personalizada y planes adaptados a su escala operativa, presupuesto y complejidad técnica. Nos enorgullece servir a diversos sectores industriales y comerciales en toda la región de Panamá.
-          </p>
-        </div>
-
-        <div class="faq__item">
-          <h3 class="faq__q">¿Cómo se documentan los trabajos realizados?</h3>
-          <p class="faq__a">
-            Cada intervención es documentada en reportes detallados que incluyen: trabajo realizado, componentes reemplazados, condición de equipos, pruebas realizadas, próxima fecha recomendada de mantenimiento y fotografía de evidencia. Esta documentación es entregada al cliente y mantiene un historial completo que te permite rastrear la vida útil de tus equipos.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA SECTION ===== -->
-  <section class="cta">
-    <div class="container">
-      <h2>¿Listo para optimizar tu mantenimiento industrial?</h2>
-      <p>Contacta a nuestro equipo hoy y recibe una evaluación sin compromiso de tu infraestructura</p>
-      <div class="cta__btns">
-        <a href="tel:+50762499781" class="btn btn--white">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-          </svg>
-          +507 6249-9781
-        </a>
-        <a href="https://wa.me/50762499781" class="btn btn--white" target="_blank">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.892 1.242l-.612-.31-6.36 1.674.36 5.694 1.682 2.794a9.864 9.864 0 001.516 5.514l.375.577 5.728-1.507.525.682a9.87 9.87 0 004.802 1.276h.005c5.487 0 9.97-4.484 9.97-9.972 0-2.661-1.04-5.165-2.927-7.045-1.887-1.879-4.39-2.916-7.034-2.916"/>
-          </svg>
-          WhatsApp
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
@@ -698,7 +194,7 @@
           <h4>Navegación</h4>
           <div class="footer__links">
             <a href="/">Inicio</a>
-            <a href="/construccion-residencial">Servicios</a>
+            <a href="/#servicios">Servicios</a>
             <a href="/proyectos">Portafolio</a>
             <a href="/contacto">Contacto</a>
           </div>
@@ -728,58 +224,12 @@
     </div>
   </footer>
 
-  <!-- ===== WHATSAPP FAB ===== -->
-  <a href="https://wa.me/50762499781" class="wa-fab" target="_blank" aria-label="Contactar por WhatsApp">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.892 1.242l-.612-.31-6.36 1.674.36 5.694 1.682 2.794a9.864 9.864 0 001.516 5.514l.375.577 5.728-1.507.525.682a9.87 9.87 0 004.802 1.276h.005c5.487 0 9.97-4.484 9.97-9.972 0-2.661-1.04-5.165-2.927-7.045-1.887-1.879-4.39-2.916-7.034-2.916"/>
-    </svg>
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/50762499781?text=Hola%2C%20necesito%20información%20sobre%20mantenimiento" class="wa-fab" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.313 0-4.445-.777-6.153-2.086l-.43-.335-3.29 1.102 1.102-3.29-.335-.43A9.96 9.96 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
   </a>
 
-  <!-- ===== SCRIPTS ===== -->
+  <!-- JS -->
   <script src="/js/shared.js"></script>
-  <script>
-    // Mobile Menu Toggle
-    const menuToggle = document.getElementById('menuToggle');
-    const menuClose = document.getElementById('menuClose');
-    const mobileMenu = document.getElementById('mobileMenu');
-
-    menuToggle?.addEventListener('click', () => {
-      mobileMenu?.classList.add('open');
-    });
-
-    menuClose?.addEventListener('click', () => {
-      mobileMenu?.classList.remove('open');
-    });
-
-    mobileMenu?.addEventListener('click', (e) => {
-      if (e.target === mobileMenu) {
-        mobileMenu.classList.remove('open');
-      }
-    });
-
-    // FAQ Toggle
-    const faqItems = document.querySelectorAll('.faq__item');
-    faqItems.forEach(item => {
-      const question = item.querySelector('.faq__q');
-      question?.addEventListener('click', () => {
-        item.classList.toggle('open');
-      });
-    });
-
-    // Scroll Reveal Animation
-    const revealElements = document.querySelectorAll('.sr');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    revealElements.forEach(el => observer.observe(el));
-  </script>
-
 </body>
 </html>
