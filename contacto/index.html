@@ -15,7 +15,7 @@
   <meta property="og:url" content="https://www.sterkpanama.com/contacto">
   <meta property="og:title" content="Contacto — Grupo Sterk Constructora Panamá">
   <meta property="og:description" content="Contacta a Grupo Sterk Constructora en Panamá. WhatsApp, email o visítanos en Sortis Tower. Cotización gratuita en 24h.">
-  <meta property="og:image" content="https://www.sterkpanama.com/og-image.jpg">
+  <meta property="og:image" content="https://www.sterkpanama.com/web-assets/projects/balmoral-loft/gallery-7.jpg">
   <meta property="og:locale" content="es_PA">
 
   <!-- Twitter Cards -->
@@ -34,6 +34,10 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/web-assets/Logo_Color.svg">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNYZC53VSK"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BNYZC53VSK');</script>
 
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
@@ -225,7 +229,14 @@
         <div class="sr sr-d2">
           <h2 style="margin-bottom: 32px;">Envíanos un Mensaje</h2>
 
-          <form class="form" action="#" method="POST">
+          <form class="form" id="contact-form" action="https://formsubmit.co/quiero@sterkpanama.com" method="POST">
+            <!-- FormSubmit config -->
+            <input type="hidden" name="_subject" value="Nueva consulta desde sterkpanama.com">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="https://www.sterkpanama.com/contacto?enviado=1">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none">
+
             <div>
               <label for="nombre">Nombre Completo *</label>
               <input type="text" id="nombre" name="nombre" required>
@@ -259,6 +270,11 @@
             </div>
 
             <button type="submit" class="btn btn--primary" style="margin-top: 16px;">Enviar Mensaje</button>
+
+            <!-- Success message (shown after redirect back) -->
+            <div id="form-success" style="display:none;margin-top:20px;padding:16px 20px;background:#e8f5e9;border-radius:8px;color:#2e7d32;font-weight:500;">
+              ¡Mensaje enviado! Te responderemos en menos de 24 horas.
+            </div>
           </form>
         </div>
       </div>
@@ -346,6 +362,13 @@
     window.addEventListener('scroll', revealOnScroll);
     window.addEventListener('load', revealOnScroll);
     revealOnScroll(); // Initial check
+
+    // Show success message after form submission redirect
+    if (window.location.search.includes('enviado=1')) {
+      const successMsg = document.getElementById('form-success');
+      if (successMsg) successMsg.style.display = 'block';
+      document.getElementById('contact-form').reset();
+    }
 
     // Mobile menu toggle
     const navToggle = document.querySelector('.nav__toggle');
