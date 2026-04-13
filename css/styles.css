@@ -95,7 +95,8 @@ h3{font-size:clamp(1.1rem,2vw,1.4rem)}
 .nav__links a.is-active{color:var(--accent)!important}
 .nav--solid .nav__links a,
 .nav.scrolled .nav__links a{color:var(--primary)}
-.nav__cta{padding:9px 22px!important;font-size:.7rem!important;border-radius:3px}
+.nav__cta{padding:9px 22px!important;font-size:.7rem!important;border-radius:3px;background:var(--accent)!important;color:var(--white)!important;border-color:var(--accent)!important}
+.nav__cta:hover{background:var(--accent-dark)!important}
 .nav__toggle{
   display:none;width:28px;height:28px;
   flex-direction:column;justify-content:center;gap:5px;padding:2px;
