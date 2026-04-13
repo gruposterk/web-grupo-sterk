@@ -122,24 +122,27 @@
 
   <!-- Page Hero -->
   <section class="page-hero">
-    <div class="page-hero__bg" style="background: var(--primary)"></div>
-    <div class="page-hero__overlay"></div>
-    <div class="page-hero__content">
-      <div class="container">
-        <h1 class="sr sr-d1">Contacto</h1>
-        <p class="page-hero__sub sr sr-d2">Estamos aquí para ayudarte con tus proyectos de construcción</p>
-      </div>
+    <div class="page-hero__bg">
+      <picture>
+        <source type="image/webp"
+          srcset="/web-assets/projects/balmoral-loft/gallery-7-480.webp 480w,
+                  /web-assets/projects/balmoral-loft/gallery-7-768.webp 768w,
+                  /web-assets/projects/balmoral-loft/gallery-7-1200.webp 1200w,
+                  /web-assets/projects/balmoral-loft/gallery-7.webp 1600w"
+          sizes="100vw">
+        <img src="/web-assets/projects/balmoral-loft/gallery-7.jpg"
+             alt="Contacto — Grupo Sterk Constructora en Ciudad de Panamá"
+             width="1600" height="1200"
+             fetchpriority="high"
+             decoding="async">
+      </picture>
     </div>
-  </section>
-
-  <!-- Breadcrumb -->
-  <section style="padding: 40px 0; background: var(--off-white);">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Inicio</a>
-        <span class="breadcrumb__sep">/</span>
-        <span class="breadcrumb__current">Contacto</span>
-      </nav>
+    <div class="page-hero__overlay"></div>
+    <div class="container page-hero__content">
+      <span class="label label--accent sr">Hablemos</span>
+      <h1 class="sr sr-d1">Contacto</h1>
+      <p class="page-hero__sub sr sr-d2">Estamos aquí para ayudarte con tus proyectos de construcción</p>
+      <nav class="breadcrumb sr sr-d3"><ol><li><a href="/">Inicio</a></li><li><span class="breadcrumb__sep">/</span></li><li><span class="breadcrumb__current">Contacto</span></li></ol></nav>
     </div>
   </section>
 
